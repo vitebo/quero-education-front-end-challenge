@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:vitebo/quero.git",
   "author": "vitebo <vitebo51@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

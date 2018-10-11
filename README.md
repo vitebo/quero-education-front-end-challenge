@@ -16,5 +16,6 @@
     |   └── images/
     ├── dist/
     ├── package.json
+    ├── gulpfile.js
     ├── .editorconfig
     └── .gitignore
