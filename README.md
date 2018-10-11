@@ -5,15 +5,15 @@
 	.
 	├── README.md
 	├── src/
-    |   ├── index.html
-    |   ├── sass/
+  |   ├── index.html
+  |   ├── sass/
 	|   |   ├── base/
 	|   |   ├── layout/
 	|   |   ├── modules/
 	|   |   └── main.scss
-    |   └── js/
+  |   └── js/
 	├── assets/
-    |   └── images/
+  |   └── images/
 	├── dist/
 	├── package.json
 	├── .editorconfig
