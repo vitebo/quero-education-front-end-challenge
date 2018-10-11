@@ -15,6 +15,8 @@
     ├── assets/
     |   └── images/
     ├── dist/
+    |   └── css/
+    |       └── main.css
     ├── package.json
     ├── gulpfile.js
     ├── .editorconfig
