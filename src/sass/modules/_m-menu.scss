@@ -1,0 +1,39 @@
+.m-menu {
+  &__group-of-items {
+    @extend %u-hide-mobile-only;
+    height: 100%;
+    padding: 0 $spacing-1;
+
+    @include tablet-breakpoint {
+      display: flex;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    transition: background-color 250ms ease-in;
+
+    &:hover,
+    &.is-active {
+      background-color: lighten($color-primary, 2%);
+    }
+  }
+
+  &__link {
+    align-items: center;
+    color: $color-white;
+    display: flex;
+    height: 100%;
+    padding: $spacing-1;
+
+    &.is-mobile {
+      @extend %u-show-mobile-only;
+      padding: $spacing-1 $spacing-2;
+    }
+  }
+
+  &__arrow-bottom-icon {
+    margin-left: $spacing-1;
+  }
+}

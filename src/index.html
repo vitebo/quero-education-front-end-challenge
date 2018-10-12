@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <!--Header-->
   <header class="l-header">
     <div class="l-header__container">
       <ul class="l-header__group-of-items">
@@ -51,32 +52,35 @@
       </ul>
     </div>
   </header>
-  <nav class="m-menu">
-    <div class="u-container">
-      <a href class="m-menu__main">Minha conta</a>
-      <a href class="m-menu__menu">
-        Menu
-        <svg class="m-menu__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7">
-          <path fill="#CCC" fill-rule="evenodd" d="M8.228.743l1 1-4.485 4.485L.257 1.743l1-1 3.486 3.485L8.228.743z"/>
-        </svg>
-      </a>
-      <ul class="m-menu__group-of-items">
-        <li>
-          <a href class="m-menu__link">Pré-matrículas</a>
-        </li>
-        <li>
-          <a href class="m-menu__link">Meus Cursos</a>
-        </li>
-        <li>
-          <a href class="m-menu__link">Atualizar meus dados</a>
-        </li>
-        <li>
-          <a href class="m-menu__link">Contas e Preferências</a>
-        </li>
-        <li>
-          <a href class="m-menu__link">Quero Bolsa Indica</a>
-        </li>
-      </ul>
+  <!--Menu-->
+  <nav class="l-menu-bar">
+    <div class="l-menu-bar__container">
+      <a href class="l-menu-bar__item is-main">Minha conta</a>
+      <div class="l-menu-bar__item m-menu">
+        <a href class="m-menu__link is-mobile">
+          Menu
+          <svg class="m-menu__arrow-bottom-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7">
+            <path fill="#FFF" fill-rule="evenodd" d="M8.228.743l1 1-4.485 4.485L.257 1.743l1-1 3.486 3.485L8.228.743z"/>
+          </svg>
+        </a>
+        <ul class="m-menu__group-of-items">
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Pré-matrículas</a>
+          </li>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Meus Cursos</a>
+          </li>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Atualizar meus dados</a>
+          </li>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Contas e Preferências</a>
+          </li>
+          <li class="m-menu__item is-active">
+            <a href class="m-menu__link">Quero Bolsa Indica</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </body>

@@ -1,0 +1,25 @@
+.l-menu-bar {
+  background-color: $color-primary;
+  font-size: 12px;
+  height: 48px;
+
+  &__container {
+    @extend %u-container;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    align-items: center;
+    color: $color-white;
+    display: flex;
+    height: 100%;
+
+    &.is-main {
+      font-weight: bold;
+      padding: $spacing-1 $spacing-2;
+      text-transform: uppercase;
+    }
+  }
+}
