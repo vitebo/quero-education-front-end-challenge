@@ -49,9 +49,9 @@ gulp.task('serve', () =>
 
 gulp.task('watch', () => {
   gulp.watch('./src/sass/**/*.scss', ['sasslint', 'sass'])
-  gulp.watch('./src/index.html', 'html')
+  gulp.watch('./src/index.html', ['html'])
 })
 
 gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin'])
 
-gulp.task('dev', ['build', 'watch'])
+gulp.task('dev', ['build', 'watch', 'serve'])
