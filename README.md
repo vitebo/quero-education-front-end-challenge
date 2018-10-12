@@ -20,5 +20,6 @@
     |   └── images/
     ├── package.json
     ├── gulpfile.js
+    ├── .eslintrc.yml
     ├── .editorconfig
     └── .gitignore
