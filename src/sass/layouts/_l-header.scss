@@ -1,4 +1,5 @@
 .l-header {
+  @extend %b-depth-1;
   $border-value: 1px solid $color-gray-300;
   background-color: $color-white;
   border-bottom: $border-value;
