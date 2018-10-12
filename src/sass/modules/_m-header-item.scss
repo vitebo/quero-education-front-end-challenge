@@ -1,0 +1,15 @@
+.m-header-item {
+  $text-color: #333;
+  color: $text-color;
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+
+  &__icon {
+    $icon-fill: #c28a1b;
+    display: inline-block;
+    fill: $icon-fill;
+    vertical-align: middle;
+  }
+}
