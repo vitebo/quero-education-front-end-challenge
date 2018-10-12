@@ -3,7 +3,7 @@
   $border-value: 1px solid $color-gray-300;
   background-color: $color-white;
   border-bottom: $border-value;
-  height: 64px;
+  height: $spacing-8;
 
   &__container {
     align-items: center;
@@ -31,7 +31,7 @@
   &__logo {
     display: inline-block;
     max-width: 128px;
-    padding: 8px;
+    padding: $spacing-1;
     width: 100%;
   }
 }
