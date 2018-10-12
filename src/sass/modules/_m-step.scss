@@ -1,0 +1,35 @@
+.m-step {
+  align-items: center;
+  display: flex;
+  padding-bottom: $spacing-6;
+  position: relative;
+
+  &__number {
+    @include u-min-max-square($spacing-6);
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: $font-weight-proxima-nova-bold;
+    padding: $spacing-1;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &:not(:last-child) {
+    &::after {
+      background-color: $color-gray-600;
+      bottom: $spacing-2;
+      content: '';
+      display: inline-block;
+      height: $spacing-2;
+      left: $spacing-3;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}

@@ -8,3 +8,20 @@
 .u-container {
   @extend %u-container;
 }
+
+@mixin u-min-max-width($value) {
+  max-width: $value;
+  min-width: $value;
+  width: $value;
+}
+
+@mixin u-min-max-height($value) {
+  height: $value;
+  max-height: $value;
+  min-height: $value;
+}
+
+@mixin u-min-max-square($value) {
+  @include u-min-max-height($value);
+  @include u-min-max-width($value);
+}
