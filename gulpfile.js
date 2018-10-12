@@ -42,6 +42,10 @@ gulp.task('imagemin', () => {
     .pipe(gulp.dest('./dist/assets/images'))
 })
 
+gulp.task('fonts', () => {
+  gulp.src('./src/assets/fonts/**')
+    .pipe(gulp.dest('./dist/assets/fonts'))
+})
 
 gulp.task('svg', () => {
   gulp.src('./src/assets/svgs/*')
@@ -60,6 +64,6 @@ gulp.task('watch', () => {
   gulp.watch('./src/index.html', ['html'])
 })
 
-gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin', 'svg'])
+gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin', 'svg', 'fonts'])
 
 gulp.task('dev', ['build', 'watch', 'serve'])

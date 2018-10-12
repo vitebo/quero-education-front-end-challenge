@@ -1,6 +1,8 @@
 html {
-  font-family: sans-serif;
+  font-family: $font-family-proxima-nova;
   font-size: 14px;
+  font-weight: $font-weight-proxima-nova;
+  line-height: 1;
 }
 
 img {
@@ -9,6 +11,7 @@ img {
 
 h1 {
   font-size: 2em;
+  font-weight: $font-weight-proxima-nova-bold;
   margin: 0;
   padding: $spacing-1 $spacing-2;
 }

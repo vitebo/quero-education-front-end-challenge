@@ -1,0 +1,49 @@
+$font-family-proxima-nova: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', Arial, Sans-Serif;
+$font-weight-proxima-nova: 400;
+$font-weight-proxima-nova-semibold: 600;
+$font-weight-proxima-nova-bold: 700;
+
+// Regular
+//noinspection CssUnknownTarget
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: $font-weight-proxima-nova;
+  src: url('/assets/fonts/proximanova-regular/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/proximanova-regular/proximanova-regular-webfont.woff') format('woff'),
+  url('/assets/fonts/proximanova-regular/proximanova-regular-webfont.ttf')  format('truetype'),
+  url('/assets/fonts/proximanova-regular/proximanova-regular-webfont.svg#ProximaNova') format('svg');
+}
+
+// Semibold
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: $font-weight-proxima-nova-semibold;
+  src: url('/assets/fonts/proximanova-semibold/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/proximanova-semibold/proximanova-semibold-webfont.woff') format('woff'),
+  url('/assets/fonts/proximanova-semibold/proximanova-semibold-webfont.ttf')  format('truetype'),
+  url('/assets/fonts/proximanova-semibold/proximanova-semibold-webfont.svg#ProximaNovaSemibold') format('svg');
+}
+
+// Bold
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: $font-weight-proxima-nova-bold;
+  src: url('/assets/fonts/proximanova-bold/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/proximanova-bold/proximanova-bold-webfont.woff') format('woff'),
+  url('/assets/fonts/proximanova-bold/proximanova-bold-webfont.ttf')  format('truetype'),
+  url('/assets/fonts/proximanova-bold/proximanova-bold-webfont.svg#ProximaNovaBold') format('svg');
+}
+
+// Italic
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: $font-weight-proxima-nova;
+  src: url('/assets/fonts/proximanova-regularitalic/proximanova-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/proximanova-regularitalic/proximanova-regularitalic-webfont.woff') format('woff'),
+  url('/assets/fonts/proximanova-regularitalic/proximanova-regularitalic-webfont.ttf')  format('truetype'),
+  url('/assets/fonts/proximanova-regularitalic/proximanova-regularitalic-webfont.svg#ProximaNovaRegularItalic') format('svg');
+}
