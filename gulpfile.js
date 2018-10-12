@@ -5,7 +5,7 @@ const eslint = require('gulp-eslint')
 const sasslint = require('gulp-sass-lint')
 const imagemin = require('gulp-imagemin')
 
-gulp.task('styles', () => {
+gulp.task('sass', () => {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css/'))
@@ -44,3 +44,8 @@ gulp.task('serve', () =>
     livereload: true
   })
 )
+
+gulp.task('watch', () => {
+  gulp.watch('./src/sass/**/*.scss', ['sasslint', 'sass'])
+  gulp.watch('./src/index.html', 'html')
+})
