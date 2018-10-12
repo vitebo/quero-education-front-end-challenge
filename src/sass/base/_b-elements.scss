@@ -1,7 +1,19 @@
 html {
   font-family: sans-serif;
+  font-size: 14px;
 }
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: $spacing-1 $spacing-2;
+}
+
+p {
+  margin: 0;
+  padding: $spacing-1 $spacing-2;
 }
