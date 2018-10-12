@@ -18,6 +18,8 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.6.1",
     "gulp-eslint": "^5.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "sass-lint": "^1.12.1"
   }
 }

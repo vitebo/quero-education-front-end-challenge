@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const connect = require('gulp-connect')
 const eslint = require('gulp-eslint')
+const sasslint = require('gulp-sass-lint')
 
 gulp.task('styles', () => {
   gulp.src('./src/sass/**/*.scss')
@@ -21,6 +22,13 @@ gulp.task('eslint', () => {
     }))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
+})
+
+gulp.task('sasslint', () => {
+  gulp.src('./src/sass/**/*.scss')
+    .pipe(sasslint())
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError())
 })
 
 gulp.task('serve', () =>
