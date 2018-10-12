@@ -1,0 +1,18 @@
+.m-card {
+  @extend %b-depth-2;
+  background-color: $color-white;
+  border: 1px solid $color-gray-500;
+  border-radius: 5px;
+  line-height: 1.5;
+  padding: $spacing-2;
+
+  // TODO: corrigir esse padding
+  &__title,
+  &__text {
+    padding: 0;
+  }
+
+  &__text {
+    margin-bottom: $spacing-2;
+  }
+}

@@ -1,7 +1,6 @@
 .m-step {
   align-items: center;
   display: flex;
-  padding-bottom: $spacing-6;
   position: relative;
 
   &__number {
@@ -21,6 +20,8 @@
   }
 
   &:not(:last-child) {
+    padding-bottom: $spacing-6;
+
     &::after {
       background-color: $color-gray-600;
       bottom: $spacing-2;

@@ -4,6 +4,10 @@
   border-bottom: $border-value;
   height: $spacing-8;
 
+  @include tablet-breakpoint {
+    height: $spacing-7;
+  }
+
   &__container {
     @extend %u-container;
     align-items: center;
