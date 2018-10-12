@@ -37,12 +37,18 @@ gulp.task('sasslint', () => {
 gulp.task('imagemin', () => {
   gulp.src('./src/assets/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images'))
+    .pipe(gulp.dest('./dist/assets/images'))
+})
+
+
+gulp.task('svg', () => {
+  gulp.src('./src/assets/svgs/*')
+    .pipe(gulp.dest('./dist/assets/svgs'))
 })
 
 gulp.task('serve', () =>
   connect.server({
-    root: './dist/',
+    root: './dist',
     livereload: true
   })
 )
@@ -52,6 +58,6 @@ gulp.task('watch', () => {
   gulp.watch('./src/index.html', ['html'])
 })
 
-gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin'])
+gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin', 'svg'])
 
 gulp.task('dev', ['build', 'watch', 'serve'])
