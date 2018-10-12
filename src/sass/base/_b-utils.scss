@@ -1,0 +1,9 @@
+%u-container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: $desktop-width;
+}
+
+.u-container {
+  @extend %u-container;
+}

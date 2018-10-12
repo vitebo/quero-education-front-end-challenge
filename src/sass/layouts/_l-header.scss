@@ -6,12 +6,10 @@
   height: $spacing-8;
 
   &__container {
+    @extend %u-container;
     align-items: center;
     display: flex;
-    height: 100%;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: $desktop-width;
   }
 
   &__group-of-items {
