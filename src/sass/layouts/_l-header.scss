@@ -1,6 +1,6 @@
 .l-header {
   @extend %b-depth-1;
-  $border-value: 1px solid $color-gray-300;
+  $border-value: 1px solid $color-gray-400;
   background-color: $color-white;
   border-bottom: $border-value;
   height: $spacing-8;
@@ -14,24 +14,50 @@
     max-width: $desktop-width;
   }
 
-  &__items {
+  &__group-of-items {
     align-items: center;
     display: flex;
+    flex-basis: auto;
     height: 100%;
+
+    @include tablet-breakpoint {
+      flex-basis: 288px;
+    }
 
     &:first-child {
       border-right: $border-value;
+
+      @include tablet-breakpoint {
+        border-right: 0;
+      }
     }
 
     &:last-child {
       border-left: $border-value;
+      justify-content: flex-end;
+
+      @include tablet-breakpoint {
+        border-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    @extend %u-show-hide-mobile-only;
+    display: inline-block;
+    height: 100%;
+
+    &:not(:first-child) {
+      @include tablet-breakpoint {
+        border-left: $border-value;
+      }
     }
   }
 
   &__logo {
-    display: inline-block;
-    max-width: 128px;
-    padding: $spacing-1;
-    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    flex: 0 1 160px;
+    padding: $spacing-1 $spacing-2;
   }
 }
