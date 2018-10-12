@@ -133,36 +133,33 @@
             <h2 class="m-card__title">Participe, acumule pontos e ganhe!</h2>
             <p class="m-card__text">Preencha os campos abaixo:</p>
           </header>
-          <form action>
-            <div>
-              <label>Situação</label>
-              <select>
+          <form class="m-card__body" action>
+            <label class="m-card__item m-form-box">
+              <span class="m-form-box__text">Situação</span>
+              <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
               </select>
-            </div>
-            <div>
-              <label>Instituição de ensino</label>
-              <select>
+            </label>
+            <label class="m-card__item m-form-box">
+              <span class="m-form-box__text">Instituição de ensino</span>
+              <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
               </select>
-            </div>
-            <div>
-              <div>
-                <label>Curso</label>
-                <select>
+            </label>
+            <div class="m-card__group">
+              <label class="m-card__item m-form-box">
+                <span class="m-form-box__text">Curso</span>
+                <select class="m-form-box__box">
                   <option value="">Vou me matricular esse semestre</option>
                   <option value="">Estou matriculado</option>
                 </select>
-              </div>
-              <div>
-                <label>Mensalidade</label>
-                <select>
-                  <option value="">Vou me matricular esse semestre</option>
-                  <option value="">Estou matriculado</option>
-                </select>
-              </div>
+              </label>
+              <label class="m-card__item m-form-box">
+                <span class="m-form-box__text">Mensalidade</span>
+                <input type="number" class="m-form-box__box"/>
+              </label>
             </div>
             <button>Quero participar</button>
             <a href>Leia o regulamento</a>

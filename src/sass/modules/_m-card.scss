@@ -1,5 +1,6 @@
 .m-card {
   @extend %b-depth-2;
+  $this: &;
   background-color: $color-white;
   border: 1px solid $color-gray-500;
   border-radius: 5px;
@@ -12,7 +13,23 @@
     padding: 0;
   }
 
-  &__text {
+  &__body {
+    margin-top: $spacing-2;
+  }
+
+  &__group {
+    display: flex;
+
+    #{$this}__item {
+      &:not(:first-child) {
+        flex-grow: 1;
+        margin-left: $spacing-2;
+      }
+    }
+  }
+
+  &__item {
+    display: block;
     margin-bottom: $spacing-2;
   }
 }
