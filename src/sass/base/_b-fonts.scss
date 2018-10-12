@@ -6,6 +6,7 @@ $font-weight-proxima-nova-bold: 700;
 // Regular
 //noinspection CssUnknownTarget
 @font-face {
+  font-display: fallback;
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: $font-weight-proxima-nova;
@@ -17,6 +18,7 @@ $font-weight-proxima-nova-bold: 700;
 
 // Semibold
 @font-face {
+  font-display: fallback;
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: $font-weight-proxima-nova-semibold;
@@ -28,6 +30,7 @@ $font-weight-proxima-nova-bold: 700;
 
 // Bold
 @font-face {
+  font-display: fallback;
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: $font-weight-proxima-nova-bold;
@@ -39,6 +42,7 @@ $font-weight-proxima-nova-bold: 700;
 
 // Italic
 @font-face {
+  font-display: fallback;
   font-family: 'Proxima Nova';
   font-style: italic;
   font-weight: $font-weight-proxima-nova;
