@@ -6,17 +6,18 @@
     ├── README.md
     ├── src/
     |   ├── index.html
+    |   ├── assets/
+    |   |   └── images/
     |   ├── sass/
     |   |   ├── base/
     |   |   ├── layout/
     |   |   ├── modules/
     |   |   └── main.scss
     |   └── js/
-    ├── assets/
-    |   └── images/
     ├── dist/
-    |   └── css/
-    |       └── main.css
+    |   ├── css/
+    |   |   └── main.css
+    |   └── images/
     ├── package.json
     ├── gulpfile.js
     ├── .editorconfig

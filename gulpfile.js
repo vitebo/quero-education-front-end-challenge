@@ -1,8 +1,9 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
 const connect = require('gulp-connect')
+const sass = require('gulp-sass')
 const eslint = require('gulp-eslint')
 const sasslint = require('gulp-sass-lint')
+const imagemin = require('gulp-imagemin')
 
 gulp.task('styles', () => {
   gulp.src('./src/sass/**/*.scss')
@@ -29,6 +30,12 @@ gulp.task('sasslint', () => {
     .pipe(sasslint())
     .pipe(sasslint.format())
     .pipe(sasslint.failOnError())
+})
+
+gulp.task('imagemin', () => {
+  gulp.src('./src/assets/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/images'))
 })
 
 gulp.task('serve', () =>
