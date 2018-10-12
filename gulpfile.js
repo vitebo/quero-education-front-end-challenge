@@ -9,11 +9,13 @@ gulp.task('sass', () => {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css/'))
+    .pipe(connect.reload())
 })
 
 gulp.task('html', () => {
   gulp.src('./src/index.html')
     .pipe(gulp.dest('./dist/'))
+    .pipe(connect.reload())
 })
 
 gulp.task('eslint', () => {
