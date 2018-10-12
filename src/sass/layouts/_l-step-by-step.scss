@@ -1,0 +1,13 @@
+.l-step-by-step {
+  background-color: $color-gray-100;
+  border-bottom: 1px solid $color-gray-400;
+  border-top: 1px solid $color-gray-400;
+  line-height: 1.5;
+  margin-top: $spacing-4;
+
+  &__container {
+    @extend %u-container;
+    padding-bottom: $spacing-4;
+    padding-top: $spacing-4;
+  }
+}

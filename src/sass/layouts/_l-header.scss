@@ -1,7 +1,6 @@
 .l-header {
   @extend %b-depth-1;
   $border-value: 1px solid $color-gray-400;
-  background-color: $color-white;
   border-bottom: $border-value;
   height: $spacing-8;
 

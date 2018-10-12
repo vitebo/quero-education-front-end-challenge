@@ -1,4 +1,6 @@
 html {
+  background-color: $color-white;
+  color: $color-black;
   font-family: $font-family-proxima-nova;
   font-size: 14px;
   font-weight: $font-weight-proxima-nova;
@@ -9,14 +11,34 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-bottom: $spacing-2;
+  padding: 0 $spacing-2;
+}
+
+h1,
+h2 {
+  font-weight: $font-weight-proxima-nova-bold;
+}
+
 h1 {
   font-size: 2em;
-  font-weight: $font-weight-proxima-nova-bold;
-  margin: 0;
-  padding: $spacing-1 $spacing-2;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: $font-weight-proxima-nova-semibold;
 }
 
 p {
+  color: $color-gray-800;
   margin: 0;
-  padding: $spacing-1 $spacing-2;
+  padding: 0 $spacing-2;
 }
