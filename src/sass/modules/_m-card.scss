@@ -6,6 +6,7 @@
   border-radius: 5px;
   line-height: 1.5;
   padding: $spacing-2;
+  padding-bottom: 0;
 
   // TODO: corrigir esse padding
   &__title,
@@ -31,5 +32,30 @@
   &__item {
     display: block;
     margin-bottom: $spacing-2;
+  }
+
+  &__button {
+    background-color: $color-highlight;
+    border: 0;
+    border-radius: 5px;
+    color: $color-white;
+    display: block;
+    font-size: 1.1em;
+    font-weight: $font-weight-proxima-nova-bold;
+    height: $spacing-6;
+    padding: 0 $spacing-4;
+    width: 100%;
+  }
+
+  &__link {
+    color: $color-secondary;
+    display: block;
+    padding: $spacing-2;
+    text-align: center;
+    transition: color 250ms ease-in;
+
+    &:hover {
+      color: lighten($color-secondary, 5%);
+    }
   }
 }
