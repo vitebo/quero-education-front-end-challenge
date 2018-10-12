@@ -29,7 +29,9 @@ gulp.task('eslint', () => {
 
 gulp.task('sasslint', () => {
   gulp.src('./src/sass/**/*.scss')
-    .pipe(sasslint())
+    .pipe(sasslint({
+      configFile: './.sasslint.yml'
+    }))
     .pipe(sasslint.format())
     .pipe(sasslint.failOnError())
 })
