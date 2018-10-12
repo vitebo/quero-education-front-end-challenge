@@ -1,8 +1,7 @@
 .l-header {
-  $background-color: #fff;
-  $border: 1px solid #ebebeb;
-  background-color: $background-color;
-  border-bottom: $border;
+  $border-value: 1px solid $color-gray-300;
+  background-color: $color-white;
+  border-bottom: $border-value;
   height: 64px;
 
   &__container {
@@ -20,11 +19,11 @@
     height: 100%;
 
     &:first-child {
-      border-right: $border;
+      border-right: $border-value;
     }
 
     &:last-child {
-      border-left: $border;
+      border-left: $border-value;
     }
   }
 

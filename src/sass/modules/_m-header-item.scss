@@ -1,7 +1,6 @@
 .m-header-item {
-  $text-color: #333;
   align-items: center;
-  color: $text-color;
+  color: $color-black;
   display: inline-flex;
   flex-wrap: wrap;
   font-size: 12px;
@@ -11,14 +10,12 @@
   transition: background-color 250ms ease-in;
 
   &:hover {
-    $background-color: #efefef;
-    background-color: $background-color;
+    background-color: $color-gray-100;
   }
 
   &__icon {
-    $icon-fill: #c28a1b;
     display: inline-block;
-    fill: $icon-fill;
+    fill: $color-secondary;
     vertical-align: middle;
   }
 }
