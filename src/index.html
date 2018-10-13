@@ -86,88 +86,86 @@
   </nav>
 
   <!--Main-->
-  <main>
-    <header class="u-container">
+  <main class="l-main">
+    <header class="l-main__header">
       <h1>Quero Bolsa Indica</h1>
       <p>Acumule pontos e troque por mensalidades pagas</p>
     </header>
 
-    <!--Passo a passo-->
-    <section class="l-step-by-step">
-      <div class="l-step-by-step__container">
-        <header>
-          <h2>Passo a passo Quero Bolsa Indica</h2>
-          <h3>Indique amigos, e a gente paga a sua mensalidade!</h3>
-        </header>
-        <p>Aqui está sua chance de ter mensalidades da sua faculdade pagas pelo programa de indicação do Quero Bolsa.</p>
-        <p>Indique amigos, acumule pontos e troque pelo pagamento das suas mensalidades!</p>
-        <ol class="l-step-by-step__steps">
-          <li class="m-step">
-            <span class="m-step__number">1</span>
-            <p class="m-step__text">
-              <strong>Cadastre-se</strong> no Quero Bolsa Indica.
-            </p>
-          </li>
-          <li class="m-step">
-            <span class="m-step__number">2</span>
-            <p class="m-step__text">
-              <strong>Envie seu link personalizado para os seus amigos</strong> que queiram cursar o Ensino Superior.
-            </p>
-          </li>
-          <li class="m-step">
-            <span class="m-step__number">3</span>
-            <p class="m-step__text">
-              <strong>Acompanhe sua pontuação</strong> no Extrato de Indicações e <strong>troque</strong> pelo pagamento
-              da mensalidade.
-            </p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Paticipe -->
-    <section class="l-participate">
-      <div class="l-participate__container">
-        <div class="m-card">
+    <div class="l-main__body">
+      <div class="l-main__container">
+        <!--Passo a passo-->
+        <section class="l-step-by-step">
           <header>
-            <h2 class="m-card__title">Participe, acumule pontos e ganhe!</h2>
-            <p class="m-card__text">Preencha os campos abaixo:</p>
+            <h2>Passo a passo Quero Bolsa Indica</h2>
+            <h3>Indique amigos, e a gente paga a sua mensalidade!</h3>
           </header>
-          <form class="m-card__body" action>
-            <label class="m-card__item m-form-box">
+          <p>Aqui está sua chance de ter mensalidades da sua faculdade pagas pelo programa de indicação do Quero Bolsa.</p>
+          <p>Indique amigos, acumule pontos e troque pelo pagamento das suas mensalidades!</p>
+          <ol class="l-step-by-step__steps">
+            <li class="m-step">
+              <span class="m-step__number">1</span>
+              <p class="m-step__text">
+                <strong>Cadastre-se</strong> no Quero Bolsa Indica.
+              </p>
+            </li>
+            <li class="m-step">
+              <span class="m-step__number">2</span>
+              <p class="m-step__text">
+                <strong>Envie seu link personalizado para os seus amigos</strong> que queiram cursar o Ensino Superior.
+              </p>
+            </li>
+            <li class="m-step">
+              <span class="m-step__number">3</span>
+              <p class="m-step__text">
+                <strong>Acompanhe sua pontuação</strong> no Extrato de Indicações e <strong>troque</strong> pelo pagamento
+                da mensalidade.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Paticipe -->
+        <section class="l-main__card l-card">
+          <header>
+            <h2 class="l-card__title">Participe, acumule pontos e ganhe!</h2>
+            <p class="l-card__text">Preencha os campos abaixo:</p>
+          </header>
+          <form class="l-card__body" action>
+            <label class="l-card__item m-form-box">
               <span class="m-form-box__text">Situação</span>
               <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
               </select>
             </label>
-            <label class="m-card__item m-form-box">
+            <label class="l-card__item m-form-box">
               <span class="m-form-box__text">Instituição de ensino</span>
               <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
               </select>
             </label>
-            <div class="m-card__group">
-              <label class="m-card__item m-form-box">
+            <div class="l-card__group">
+              <label class="l-card__item m-form-box">
                 <span class="m-form-box__text">Curso</span>
                 <select class="m-form-box__box">
                   <option value="">Vou me matricular esse semestre</option>
                   <option value="">Estou matriculado</option>
                 </select>
               </label>
-              <label class="m-card__item m-form-box">
+              <label class="l-card__item m-form-box">
                 <span class="m-form-box__text">Mensalidade</span>
                 <input type="number" class="m-form-box__box"/>
               </label>
             </div>
-            <button class="m-card__button">Quero participar</button>
-            <a href class="m-card__link">Leia o regulamento</a>
+            <button class="l-card__button">Quero participar</button>
+            <a href class="l-card__link">Leia o regulamento</a>
           </form>
-        </div>
+        </section>
       </div>
-    </section>
-
+    </div>
   </main>
+
 </body>
 </html>

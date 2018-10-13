@@ -1,9 +1,0 @@
-.l-participate {
-  background-color: $color-gray-100;
-  border-bottom: 1px solid $color-gray-400;
-
-  &__container {
-    @extend %u-container;
-    padding: $spacing-2;
-  }
-}

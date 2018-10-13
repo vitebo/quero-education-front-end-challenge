@@ -1,4 +1,4 @@
-.m-card {
+.l-card {
   @extend %b-depth-2;
   $this: &;
   background-color: $color-white;
@@ -7,12 +7,6 @@
   line-height: 1.5;
   padding: $spacing-2;
   padding-bottom: 0;
-
-  // TODO: corrigir esse padding
-  &__title,
-  &__text {
-    padding: 0;
-  }
 
   &__body {
     margin-top: $spacing-2;

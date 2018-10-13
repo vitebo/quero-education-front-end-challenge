@@ -1,13 +1,13 @@
 .l-menu-bar {
   background-color: $color-primary;
   height: 48px;
-  margin-bottom: $spacing-4;
 
   &__container {
     @extend %u-container;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 0 $spacing-1;
   }
 
   &__item {

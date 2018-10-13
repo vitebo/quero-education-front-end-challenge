@@ -17,6 +17,7 @@
 
   &__text {
     display: inline-block;
+    margin-left: $spacing-1;
   }
 
   &:not(:last-child) {
