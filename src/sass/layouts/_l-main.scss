@@ -6,39 +6,4 @@
     padding-bottom: $spacing-4;
     padding-top: $spacing-4;
   }
-
-  &__panel {
-    background-color: $color-gray-100;
-    border-bottom: 1px solid $color-gray-400;
-    padding-top: $spacing-4;
-    position: relative;
-
-    @include tablet-breakpoint {
-      padding-bottom: $spacing-4;
-    }
-  }
-
-  &__container {
-    @extend %u-container;
-
-    @include tablet-breakpoint {
-      align-items: flex-end;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  &__card {
-    flex: 1 1 480px;
-    transform: translateY($spacing-4);
-
-    @include tablet-breakpoint {
-      margin-left: $spacing-4;
-      transform: translateY($spacing-8);
-    }
-  }
-
-  &__steps {
-    margin-top: $spacing-3;
-  }
 }
