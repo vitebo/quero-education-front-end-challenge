@@ -1,6 +1,6 @@
 .l-menu-bar {
   background-color: $color-primary;
-  height: 48px;
+  height: $spacing-5;
 
   &__container {
     @extend %u-container;
