@@ -28,6 +28,7 @@
     margin-bottom: $spacing-2;
   }
 
+  // TODO: Faz sentido esse botão ficar preso no escopo desse card?
   &__button {
     background-color: $color-highlight;
     border: 0;
