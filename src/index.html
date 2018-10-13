@@ -172,46 +172,73 @@
       <header>
         <h2>Indique o Quero Bolsa para seus amigos</h2>
       </header>
-      <h3>Envie para contatos do e-mail e compartilhe nas redes sociais</h3>
-      <div class="l-main__share-container">
-        <!--Contatos do e-mail-->
-        <div class="l-main__share-group">
-          <h4 class="l-main__share-group-title">Contatos do e-mail</h4>
-          <ul class="l-main__share-list">
-            <li class="l-main__share-item">
-              <a href class="l-main__share-link">
-                <img class="l-main__share-icon" src="./assets/images/gmail.png" alt="gmail">
-              </a>
-            </li>
-            <li class="l-main__share-item">
-              <a href class="l-main__share-link">
-                <img class="l-main__share-icon" src="./assets/images/windows.png" alt="windows">
-              </a>
-            </li>
-          </ul>
-        </div>
 
-        <!--Redes sociais-->
-        <div class="l-main__share-group">
-          <h4 class="l-main__share-group-title">Redes sociais</h4>
-          <ul class="l-main__share-list">
-            <li class="l-main__share-item">
-              <a href class="l-main__share-link">
-                <img class="l-main__share-icon" src="./assets/images/facebook.png" alt="facebook">
-              </a>
-            </li>
-            <li class="l-main__share-item">
-              <a href class="l-main__share-link">
-                <img class="l-main__share-icon" src="./assets/images/twitter.png" alt="twitter">
-              </a>
-            </li>
-            <li class="l-main__share-item">
-              <a href class="l-main__share-link">
-                <img class="l-main__share-icon" src="./assets/svgs/whatsapp.svg" alt="whatsapp">
-              </a>
-            </li>
-          </ul>
+      <!--Compartilhar nas redes sociais-->
+      <div>
+        <h3>Envie para contatos do e-mail e compartilhe nas redes sociais</h3>
+        <div class="l-main__share-container">
+          <!--Contatos do e-mail-->
+          <div class="l-main__share-group">
+            <h4 class="l-main__share-group-title">Contatos do e-mail</h4>
+            <ul class="l-main__share-list">
+              <li class="l-main__share-item">
+                <a href class="l-main__share-link">
+                  <img class="l-main__share-icon" src="./assets/images/gmail.png" alt="gmail">
+                </a>
+              </li>
+              <li class="l-main__share-item">
+                <a href class="l-main__share-link">
+                  <img class="l-main__share-icon" src="./assets/images/windows.png" alt="windows">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Redes sociais-->
+          <div class="l-main__share-group">
+            <h4 class="l-main__share-group-title">Redes sociais</h4>
+            <ul class="l-main__share-list">
+              <li class="l-main__share-item">
+                <a href class="l-main__share-link">
+                  <img class="l-main__share-icon" src="./assets/images/facebook.png" alt="facebook">
+                </a>
+              </li>
+              <li class="l-main__share-item">
+                <a href class="l-main__share-link">
+                  <img class="l-main__share-icon" src="./assets/images/twitter.png" alt="twitter">
+                </a>
+              </li>
+              <li class="l-main__share-item">
+                <a href class="l-main__share-link">
+                  <img class="l-main__share-icon" src="./assets/svgs/whatsapp.svg" alt="whatsapp">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <!--Compartilhar por e-mail-->
+      <div>
+        <h3>Envie o link por e-mail ou copie e compartilhe</h3>
+        <form action>
+          <label class="m-form-box">
+            <span class="m-form-box__text">Digite o e-mail das pessoas que você quer enviar o convite</span>
+            <div class="m-form-box__group">
+              <input type="email" class="m-form-box__box" placeholder="Entre com os e-mails">
+              <button class="m-form-box__button">Enviar</button>
+            </div>
+          </label>
+          <p>Utilize virgula para separar os e-mails</p>
+
+          <label class="m-form-box">
+            <span class="m-form-box__text">Clique para copiar o link, depois cole onde quiser</span>
+            <div class="m-form-box__group">
+              <input type="email" class="m-form-box__box" value="https://que.bo/qibgkzczi7" disabled>
+              <button class="m-form-box__button">Copiar</button>
+            </div>
+          </label>
+        </form>
       </div>
 
     </section>

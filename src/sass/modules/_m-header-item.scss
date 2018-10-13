@@ -15,11 +15,9 @@
     color: $color-gray-900;
     display: inline-block;
     fill: $color-secondary;
-    margin-bottom: $spacing-1;
     vertical-align: middle;
 
     @include tablet-breakpoint {
-      margin-bottom: 0;
       margin-right: $spacing-1;
     }
   }
