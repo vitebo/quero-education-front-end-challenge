@@ -18,9 +18,9 @@
 
   &__icon {
     fill: $color-white;
-    height: $spacing-4;
+    height: $spacing-3;
     margin-bottom: $spacing-1;
-    width: $spacing-3;
+    width: 20px;
   }
 
   &__title {
@@ -43,15 +43,14 @@
     border-radius: 50%;
     content: '';
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 4px;
 
     &.is-open {
       background-color: $color-highlight;
     }
 
     &.is-close {
-      $close-color: #e03f50;
-      background-color: $close-color;
+      background-color: $color-danger;
     }
   }
 
