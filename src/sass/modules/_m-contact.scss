@@ -28,7 +28,7 @@
     fill: $color-white;
     height: $spacing-3;
     margin-bottom: $spacing-1;
-    width: 20px;
+    width: $spacing-3;
 
     @include tablet-breakpoint {
       fill: darken($color-primary, 10%);
@@ -42,7 +42,7 @@
     @extend %u-show-hide-mobile-only;
     align-items: center;
     display: flex;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: normal;
 
     @include tablet-breakpoint {

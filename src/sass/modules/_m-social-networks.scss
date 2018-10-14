@@ -24,6 +24,10 @@
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
+
+    @include tablet-breakpoint {
+      @include u-min-max-square($spacing-6);
+    }
   }
 
   &__icon {

@@ -1,7 +1,8 @@
 .l-share {
   @extend %u-container;
   $this: &;
-  padding: $spacing-4 0;
+  padding-bottom: $spacing-4;
+  padding-top: $spacing-4;
 
   &__title {
     margin-bottom:  $spacing-2;
