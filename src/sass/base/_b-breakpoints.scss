@@ -49,3 +49,7 @@ $desktop-width: 1024px;
     @extend %u-hide-mobile-only;
   }
 }
+
+.u-hide-mobile-only {
+  @extend %u-hide-mobile-only;
+}

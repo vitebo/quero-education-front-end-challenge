@@ -1,0 +1,32 @@
+.l-footer {
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  &__contact {
+    background-color: $color-primary;
+    color: $color-white;
+    height: $spacing-8;
+  }
+
+  &__contact-content {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+
+    &:first-child {
+      border-right: 1px solid darken($color-primary, 4%);
+    }
+  }
+
+  &__contact-item {
+    &:not(:last-child) {
+      margin-right: $spacing-2;
+    }
+  }
+}
