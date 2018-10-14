@@ -2,9 +2,11 @@
   color: $color-white;
 
   &__container {
+    @extend %u-container-only-tablet;
     display: flex;
     height: 100%;
     justify-content: center;
+    padding: 0 $spacing-1;
   }
 
   &__contact {
@@ -17,16 +19,28 @@
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
 
     &:first-child {
       border-right: 1px solid darken($color-primary, 4%);
+      justify-content: flex-start;
+
+      @include tablet-breakpoint {
+        border-right: 0;
+      }
+    }
+
+    &:last-child {
+      justify-content: flex-end;
     }
   }
 
   &__contact-item {
     &:not(:last-child) {
-      margin-right: $spacing-2;
+      margin-right: $spacing-1;
+
+      @include tablet-breakpoint {
+        margin-right: $spacing-2;
+      }
     }
   }
 }

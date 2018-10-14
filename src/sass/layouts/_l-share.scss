@@ -1,7 +1,7 @@
 .l-share {
   @extend %u-container;
   $this: &;
-  padding-top: $spacing-4;
+  padding: $spacing-4 0;
 
   &__title {
     margin-bottom:  $spacing-2;
@@ -45,6 +45,8 @@
   }
 
   &__emails-item {
-    margin-bottom: $spacing-2;
+    &:not(:last-child) {
+      margin-bottom: $spacing-2;
+    }
   }
 }

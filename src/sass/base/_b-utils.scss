@@ -5,6 +5,17 @@
   padding: 0 $spacing-2;
 }
 
+%u-container-only-tablet {
+  @extend %u-container;
+  max-width: 100%;
+  padding: 0;
+
+  @include tablet-breakpoint {
+    max-width: $desktop-width;
+    padding: 0 $spacing-2;
+  }
+}
+
 .u-container {
   @extend %u-container;
 }

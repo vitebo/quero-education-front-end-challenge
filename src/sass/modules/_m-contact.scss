@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
 
+  @include tablet-breakpoint {
+    flex-direction: row;
+  }
+
   &__content {
     @extend %u-show-hide-mobile-only;
     display: flex;
@@ -14,6 +18,10 @@
     &.is-hide-only-mobile {
       margin-left: $spacing-1;
     }
+
+    @include tablet-breakpoint {
+      margin-left: $spacing-1;
+    }
   }
 
   &__icon {
@@ -21,21 +29,36 @@
     height: $spacing-3;
     margin-bottom: $spacing-1;
     width: 20px;
+
+    @include tablet-breakpoint {
+      fill: darken($color-primary, 10%);
+      height: $spacing-4;
+      margin-bottom: 0;
+      width: $spacing-5;
+    }
   }
 
   &__title {
     @extend %u-show-hide-mobile-only;
     align-items: center;
     display: flex;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: normal;
+
+    @include tablet-breakpoint {
+      font-size: 1.2em;
+    }
   }
 
   &__more-info {
     color: $color-white;
     display: none;
     font-size: .7em;
-    font-style: italic;
+
+    @include tablet-breakpoint {
+      display: inline-block;
+      font-size: .9em;
+    }
   }
 
   &__status {
@@ -49,7 +72,7 @@
       background-color: $color-highlight;
     }
 
-    &.is-close {
+    &.is-closed {
       background-color: $color-danger;
     }
   }
