@@ -21,11 +21,11 @@
   }
 
   &:not(:last-child) {
-    padding-bottom: $spacing-6;
+    padding-bottom: $spacing-4;
 
     &::after {
       background-color: $color-gray-600;
-      bottom: $spacing-2;
+      bottom: $spacing-1;
       content: '';
       display: inline-block;
       height: $spacing-2;
