@@ -96,7 +96,7 @@
     <div class="l-panel">
       <div class="l-panel__container">
         <!--Passo a passo-->
-        <section>
+        <section class="l-panel__step-by-step">
           <header>
             <h2>Passo a passo Quero Bolsa Indica</h2>
             <h3>Indique amigos, e a gente paga a sua mensalidade!</h3>
@@ -134,14 +134,14 @@
           </header>
           <form class="l-card__body" action>
             <label class="l-card__item m-form-box">
-              <span class="m-form-box__text">Situação</span>
+              <strong class="m-form-box__label-text is-spotlight">Situação</strong>
               <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
               </select>
             </label>
             <label class="l-card__item m-form-box">
-              <span class="m-form-box__text">Instituição de ensino</span>
+              <strong class="m-form-box__label-text is-spotlight">Instituição de ensino</strong>
               <select class="m-form-box__box">
                 <option value="">Vou me matricular esse semestre</option>
                 <option value="">Estou matriculado</option>
@@ -149,14 +149,14 @@
             </label>
             <div class="l-card__group">
               <label class="l-card__item m-form-box">
-                <span class="m-form-box__text">Curso</span>
+                <strong class="m-form-box__label-text is-spotlight">Curso</strong>
                 <select class="m-form-box__box">
                   <option value="">Vou me matricular esse semestre</option>
                   <option value="">Estou matriculado</option>
                 </select>
               </label>
               <label class="l-card__item m-form-box">
-                <span class="m-form-box__text">Mensalidade</span>
+                <strong class="m-form-box__label-text is-spotlight">Mensalidade</strong>
                 <input type="number" class="m-form-box__box"/>
               </label>
             </div>
@@ -170,77 +170,78 @@
     <!--Compartilhe-->
     <section class="l-share">
       <header>
-        <h2>Indique o Quero Bolsa para seus amigos</h2>
+        <h2 class="l-share__title">Indique o Quero Bolsa para seus amigos</h2>
       </header>
 
-      <!--Compartilhar nas redes sociais-->
-      <div>
-        <h3>Envie para contatos do e-mail e compartilhe nas redes sociais</h3>
-        <div class="l-share__container">
-          <!--Contatos do e-mail-->
-          <div class="l-share__group">
-            <h4 class="l-share__title">Contatos do e-mail</h4>
-            <ul class="l-share__list">
-              <li class="l-share__item">
-                <a href class="l-share__link">
-                  <img class="l-share__icon" src="./assets/images/gmail.png" alt="gmail">
-                </a>
-              </li>
-              <li class="l-share__item">
-                <a href class="l-share__link">
-                  <img class="l-share__icon" src="./assets/images/windows.png" alt="windows">
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="l-share__content">
+        <!--Compartilhar nas redes sociais-->
+        <div class="l-share__social-networks">
+          <h3>Envie para contatos do e-mail e compartilhe nas redes sociais</h3>
+          <div>
+            <!--Contatos do e-mail-->
+            <div class="l-share__social-networks-item m-social-networks">
+              <h4 class="m-social-networks__title">Contatos do e-mail</h4>
+              <ul class="m-social-networks__list">
+                <li class="m-social-networks__item">
+                  <a href class="m-social-networks__link">
+                    <img class="m-social-networks__icon" src="./assets/images/gmail.png" alt="gmail">
+                  </a>
+                </li>
+                <li class="m-social-networks__item">
+                  <a href class="m-social-networks__link">
+                    <img class="m-social-networks__icon" src="./assets/images/windows.png" alt="windows">
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <!--Redes sociais-->
-          <div class="l-share__group">
-            <h4 class="l-share__title">Redes sociais</h4>
-            <ul class="l-share__list">
-              <li class="l-share__item">
-                <a href class="l-share__link">
-                  <img class="l-share__icon" src="./assets/images/facebook.png" alt="facebook">
-                </a>
-              </li>
-              <li class="l-share__item">
-                <a href class="l-share__link">
-                  <img class="l-share__icon" src="./assets/images/twitter.png" alt="twitter">
-                </a>
-              </li>
-              <li class="l-share__item">
-                <a href class="l-share__link">
-                  <img class="l-share__icon" src="./assets/svgs/whatsapp.svg" alt="whatsapp">
-                </a>
-              </li>
-            </ul>
+            <!--Redes sociais-->
+            <div class="l-share__social-networks-item m-social-networks">
+              <h4 class="m-social-networks__title">Redes sociais</h4>
+              <ul class="m-social-networks__list">
+                <li class="m-social-networks__item">
+                  <a href class="m-social-networks__link">
+                    <img class="m-social-networks__icon" src="./assets/images/facebook.png" alt="facebook">
+                  </a>
+                </li>
+                <li class="m-social-networks__item">
+                  <a href class="m-social-networks__link">
+                    <img class="m-social-networks__icon" src="./assets/images/twitter.png" alt="twitter">
+                  </a>
+                </li>
+                <li class="m-social-networks__item">
+                  <a href class="m-social-networks__link">
+                    <img class="m-social-networks__icon" src="./assets/svgs/whatsapp.svg" alt="whatsapp">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <!--Compartilhar pelo link-->
+        <div class="l-share__emails">
+          <h3>Envie o link por e-mail ou copie e compartilhe</h3>
+          <form action>
+            <label class="l-share__emails-item m-form-box">
+              <strong class="m-form-box__label-text">Digite o e-mail das pessoas que você quer enviar o convite</strong>
+              <div class="m-form-box__group">
+                <input type="email" class="m-form-box__box" placeholder="Entre com os e-mails">
+                <button class="m-form-box__button">Enviar</button>
+              </div>
+              <p class="m-form-box__tip-text">Utilize virgula para separar os e-mails</p>
+            </label>
+
+            <label class="l-share__emails-item m-form-box">
+              <strong class="m-form-box__label-text">Clique para copiar o link, depois cole onde quiser</strong>
+              <div class="m-form-box__group">
+                <input type="email" class="m-form-box__box" value="https://que.bo/qijwccj2y5" disabled>
+                <button class="m-form-box__button">Copiar</button>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
-
-      <!--Compartilhar por e-mail-->
-      <div>
-        <h3>Envie o link por e-mail ou copie e compartilhe</h3>
-        <form action>
-          <label class="m-form-box">
-            <span class="m-form-box__text">Digite o e-mail das pessoas que você quer enviar o convite</span>
-            <div class="m-form-box__group">
-              <input type="email" class="m-form-box__box" placeholder="Entre com os e-mails">
-              <button class="m-form-box__button">Enviar</button>
-            </div>
-          </label>
-          <p>Utilize virgula para separar os e-mails</p>
-
-          <label class="m-form-box">
-            <span class="m-form-box__text">Clique para copiar o link, depois cole onde quiser</span>
-            <div class="m-form-box__group">
-              <input type="email" class="m-form-box__box" value="https://que.bo/qijwccj2y5" disabled>
-              <button class="m-form-box__button">Copiar</button>
-            </div>
-          </label>
-        </form>
-      </div>
-
     </section>
   </main>
 

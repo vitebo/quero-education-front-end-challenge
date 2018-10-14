@@ -1,12 +1,23 @@
 .m-form-box {
   $this: &;
+  display: inline-block;
+  width: 100%;
 
-  &__text {
-    color: $color-gray-800;
+  &__label-text {
     display: block;
     font-size: .9em;
-    font-weight: $font-weight-proxima-nova-semibold;
-    text-transform: uppercase;
+    font-weight: $font-weight-proxima-nova;
+
+    &.is-spotlight {
+      color: $color-gray-800;
+      font-weight: $font-weight-proxima-nova-semibold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__tip-text {
+    font-size: .8em;
+    font-style: italic;
   }
 
   &__box {

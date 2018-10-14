@@ -18,8 +18,12 @@
     }
   }
 
-  &__card {
+  &__step-by-step {
     flex: 1 1 480px;
+  }
+
+  &__card {
+    flex: 1 1 400px;
     transform: translateY($spacing-4);
 
     @include tablet-breakpoint {

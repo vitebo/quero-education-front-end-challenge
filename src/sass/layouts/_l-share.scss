@@ -1,47 +1,50 @@
 .l-share {
   @extend %u-container;
+  $this: &;
   padding-top: $spacing-8;
 
-  &__container {
-    border-bottom: 1px solid $color-gray-300;
-    display: flex;
-    padding-bottom: $spacing-4;
+  &__title {
+    margin-bottom:  $spacing-2;
+
+    @include tablet-breakpoint {
+      border-bottom: 1px solid $color-gray-400;
+      margin-bottom: $spacing-3;
+      padding-bottom: $spacing-2;
+    }
   }
 
-  &__group {
-    display: inline-block;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
 
+    @include tablet-breakpoint {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__social-networks {
+    border-bottom: 1px solid $color-gray-400;
+    flex: 1 1 480px;
+    margin-bottom: $spacing-3;
+    padding-bottom: $spacing-3;
+
+    @include tablet-breakpoint {
+      border-bottom: 0;
+      margin-right: $spacing-4;
+    }
+  }
+
+  &__social-networks-item {
     &:not(:last-child) {
       margin-right: $spacing-2;
     }
   }
 
-  &__title {
-    color: $color-gray-800;
-    font-weight: $font-weight-proxima-nova;
+  &__emails {
+    flex: 1 1 400px;
   }
 
-  &__icon {
-    max-height: 21px;
-    max-width: 24px;
-  }
-
-  &__list {
-    display: flex;
-  }
-
-  &__item {
-    &:not(:first-child) {
-      margin-left: $spacing-1;
-    }
-  }
-
-  &__link {
-    @include u-min-max-square($spacing-5);
-    align-items: center;
-    border: 1px solid $color-gray-400;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
+  &__emails-item {
+    margin-bottom: $spacing-2;
   }
 }
