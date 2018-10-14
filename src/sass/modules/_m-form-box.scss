@@ -24,8 +24,19 @@
     background-color: $color-white;
     border: 1px solid $color-gray-500;
     border-radius: 5px;
-    padding: $spacing-1;
+    color: $color-gray-700;
+    height: $spacing-5;
+    padding: $spacing-2;
     width: 100%;
+
+    &:disabled {
+      background-color: $color-gray-100;
+      border-color: $color-gray-400;
+    }
+
+    &.is-bigger {
+      height: $spacing-6;
+    }
   }
 
   &__button {
@@ -36,8 +47,12 @@
     color: $color-secondary;
     font-weight: $font-weight-proxima-nova-semibold;
     padding: 0 $spacing-1;
+    transition: 250ms ease-in;
+    transition-property: color, background-color;
 
     &:hover {
+      background-color: $color-secondary;
+      color: $color-white;
       cursor: pointer;
     }
   }
