@@ -3,35 +3,68 @@
   border-top: 1px solid $color-primary;
   height: $spacing-7;
 
+  @include tablet-breakpoint {
+    height: auto;
+    padding: $spacing-4 0;
+  }
+
   &__container {
     @extend %u-container;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__group {
     display: none;
 
     &.is-main {
+      display: block;
+      flex: 1 1 auto;
+    }
+
+    @include tablet-breakpoint {
+      align-items: flex-start;
       display: flex;
-      flex: 1;
-      justify-content: center;
+      flex: 1 1 200px;
+      flex-wrap: wrap;
+
+      &:not(:last-child) {
+        padding-right: $spacing-2;
+      }
     }
   }
 
   &__content {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: center;
-  }
 
-  &__item {
-    display: inline-block;
-    flex: 1;
-    text-align: center;
+    @include tablet-breakpoint {
+      height: 96px;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
     display: none;
+
+    @include tablet-breakpoint {
+      display: block;
+      font-weight: $font-weight-proxima-nova;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    flex: 1 1 auto;
+    text-align: center;
+
+    @include tablet-breakpoint {
+      flex-grow: 0;
+    }
   }
 
   &__link {
@@ -39,11 +72,25 @@
   }
 
   &__image {
-    @include u-min-max-square($spacing-5);
     vertical-align: middle;
+
+    &.is-bigger {
+      max-width: $spacing-8;
+    }
+
+    &.is-small {
+      max-height: $spacing-4;
+    }
   }
 
   &__more-info {
     display: none;
+
+    @include tablet-breakpoint {
+      color: $color-white;
+      display: inline-block;
+      line-height: 1;
+      margin-left: $spacing-1;
+    }
   }
 }
