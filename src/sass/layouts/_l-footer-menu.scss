@@ -3,8 +3,8 @@
   padding: $spacing-2 0;
 
   @include tablet-breakpoint {
-    padding-top: $spacing-2;
     padding-bottom: $spacing-4;
+    padding-top: $spacing-2;
   }
 
   &__container {
