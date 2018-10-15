@@ -1,4 +1,49 @@
 .l-midia {
   background-color: darken($color-primary, 10%);
   border-top: 1px solid $color-primary;
+  height: $spacing-7;
+
+  &__container {
+    @extend %u-container;
+    display: flex;
+  }
+
+  &__group {
+    display: none;
+
+    &.is-main {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__link {
+    padding: 0 $spacing-1;
+  }
+
+  &__image {
+    @include u-min-max-square($spacing-5);
+    vertical-align: middle;
+  }
+
+  &__more-info {
+    display: none;
+  }
 }
