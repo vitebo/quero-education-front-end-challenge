@@ -1,28 +1,65 @@
 .l-footer-menu {
   background-color: darken($color-primary, 10%);
-  padding-bottom: $spacing-4;
-  padding-top: $spacing-1;
+  padding: $spacing-2 0;
+
+  @include tablet-breakpoint {
+    padding-top: $spacing-2;
+    padding-bottom: $spacing-4;
+  }
 
   &__container {
     @extend %u-container;
-    display: flex;
-    flex-wrap: wrap;
+  }
+
+  &__content {
+    @extend %u-show-hide-mobile-only;
+
+    @include tablet-breakpoint {
+      &.is-hide-only-mobile {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   &__group {
     flex: 1 1 auto;
-    padding: 0 $spacing-2;
+
+    @include tablet-breakpoint {
+      padding: 0 $spacing-1;
+    }
   }
 
   &__title {
     color: $color-white;
-    padding: $spacing-3 0;
+    margin: $spacing-2 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    align-items: center;
+    display: inline-flex;
+
+    &:not(:first-child) {
+      &::before {
+        border-right: 1px solid $color-white;
+        content: '';
+        display: inline-block;
+        height: 10px;
+        margin: 0 $spacing-1;
+        width: 1px;
+      }
+    }
   }
 
   &__link {
     color: $color-white;
     display: inline-block;
-    margin-bottom: $spacing-1;
     padding: $spacing-1 0;
     width: 100%;
   }
