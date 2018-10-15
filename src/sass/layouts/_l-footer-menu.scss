@@ -1,0 +1,29 @@
+.l-footer-menu {
+  background-color: darken($color-primary, 10%);
+  padding-bottom: $spacing-4;
+  padding-top: $spacing-1;
+
+  &__container {
+    @extend %u-container;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__group {
+    flex: 1 1 auto;
+    padding: 0 $spacing-2;
+  }
+
+  &__title {
+    color: $color-white;
+    padding: $spacing-3 0;
+  }
+
+  &__link {
+    color: $color-white;
+    display: inline-block;
+    margin-bottom: $spacing-1;
+    padding: $spacing-1 0;
+    width: 100%;
+  }
+}

@@ -1,4 +1,6 @@
 .l-contact {
+  @extend %b-depth-1;
+  $this: &;
   background-color: $color-primary;
   color: $color-white;
   height: $spacing-8;
@@ -31,12 +33,22 @@
 
     &:last-child {
       justify-content: flex-end;
+
+      #{$this}__item {
+        @include tablet-breakpoint {
+          justify-content: flex-end;
+        }
+      }
     }
   }
 
   &__item {
     flex: 1 1 auto;
     justify-content: center;
+
+    @include tablet-breakpoint {
+      justify-content: flex-start;
+    }
 
     &:first-child {
       flex-shrink: 0;
