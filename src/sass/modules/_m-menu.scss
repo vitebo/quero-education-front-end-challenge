@@ -9,6 +9,15 @@
     }
   }
 
+  &__toggle {
+    @extend %u-show-mobile-only;
+    background-color: transparent;
+    border: 0;
+    color: $color-white;
+    height: 100%;
+    padding: $spacing-1 $spacing-2;
+  }
+
   &__item {
     align-items: center;
     display: flex;
@@ -26,11 +35,6 @@
     display: flex;
     height: 100%;
     padding: $spacing-1;
-
-    &.is-mobile {
-      @extend %u-show-mobile-only;
-      padding: $spacing-1 $spacing-2;
-    }
   }
 
   &__arrow-bottom-icon {
