@@ -36,6 +36,11 @@ gulp.task('sasslint', () => {
     .pipe(sasslint.failOnError())
 })
 
+gulp.task('js', () => {
+  gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./dist/js'))
+})
+
 gulp.task('imagemin', () => {
   gulp.src('./src/assets/images/*')
     .pipe(imagemin())
@@ -62,8 +67,9 @@ gulp.task('serve', () =>
 gulp.task('watch', () => {
   gulp.watch('./src/sass/**/*.scss', ['sasslint', 'sass'])
   gulp.watch('./src/index.html', ['html'])
+  gulp.watch('./src/js/**/*.js', ['js'])
 })
 
-gulp.task('build', ['html', 'sasslint', 'sass', 'imagemin', 'svg', 'fonts'])
+gulp.task('build', ['html', 'sasslint', 'sass', 'js', 'imagemin', 'svg', 'fonts'])
 
 gulp.task('dev', ['build', 'watch', 'serve'])
