@@ -1,25 +1,60 @@
 .l-menu-bar {
+  @extend %b-depth-1;
   background-image: linear-gradient(to right, $color-primary, darken($color-primary, 5%));
-  height: $spacing-6;
 
   &__container {
     @extend %u-container;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    width: 100%;
+
+    @include tablet-breakpoint {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__group {
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tablet-breakpoint {
+      width: auto;
+    }
   }
 
   &__item {
     align-items: center;
+    background-color: transparent;
+    border: 0;
     color: $color-white;
     display: flex;
     height: 100%;
+    line-height: 2;
+    padding: $spacing-1 $spacing-2;
+    white-space: nowrap;
+
+    @include tablet-breakpoint {
+      display: none;
+    }
 
     &.is-main {
       font-weight: bold;
-      padding: $spacing-1 $spacing-2;
       text-transform: uppercase;
+
+      @include tablet-breakpoint {
+        display: flex;
+      }
     }
+  }
+
+  &__arrow-bottom-icon {
+    margin-left: $spacing-1;
   }
 }
