@@ -1,7 +1,7 @@
 .l-bottom-bar {
   @extend %b-depth-1;
-  background-color: darken($color-primary, 10%);
-  border-top: 1px solid $color-primary;
+  background-color: darken($color-primary, 15%);
+  border-top: 1px solid darken($color-primary, 10%);
   padding: $spacing-2 0;
 
   @include tablet-breakpoint {

@@ -1,5 +1,5 @@
 .l-menu-bar {
-  background-color: $color-primary;
+  background-image: linear-gradient(to right, $color-primary, darken($color-primary, 5%));
   height: $spacing-6;
 
   &__container {

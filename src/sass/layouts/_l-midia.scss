@@ -1,6 +1,6 @@
 .l-midia {
-  background-color: darken($color-primary, 10%);
-  border-top: 1px solid $color-primary;
+  background-color: darken($color-primary, 15%);
+  border-top: 1px solid darken($color-primary, 10%);
   height: $spacing-7;
 
   @include tablet-breakpoint {
@@ -59,12 +59,8 @@
 
   &__item {
     display: inline-block;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     text-align: center;
-
-    @include tablet-breakpoint {
-      flex-grow: 0;
-    }
   }
 
   &__link {

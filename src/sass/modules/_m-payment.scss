@@ -1,16 +1,29 @@
 .m-payment {
-  display: none;
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  padding: 0 $spacing-1;
 
-  @include tablet-breakpoint {
-    align-items: center;
+  &.u-show-mobile-only {
     display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    padding: 0 $spacing-1;
+
+    @include tablet-breakpoint {
+      display: none;
+    }
+  }
+
+  &.u-hide-mobile-only {
+    display: none;
+
+    @include tablet-breakpoint {
+      display: flex;
+    }
   }
 
   &__item {
-    display: inline-block;
+    align-items: center;
+    display: inline-flex;
     max-width: 180px;
 
     & + & {

@@ -1,4 +1,14 @@
 .l-footer {
   color: $color-white;
 
+  &__payment {
+    align-items: center;
+    background-color: darken($color-primary, 15%);
+    display: flex;
+    padding: $spacing-2 0;
+
+    @include tablet-breakpoint {
+      display: none;
+    }
+  }
 }
