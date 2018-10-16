@@ -1,5 +1,8 @@
 .m-header-item {
+  $this: &;
   align-items: center;
+  background-color: transparent;
+  border: 0;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -9,6 +12,23 @@
 
   @include tablet-breakpoint {
     flex-direction: row;
+  }
+
+  &.is-toggle {
+    @include tablet-breakpoint {
+      display: none;
+    }
+  }
+
+  &.is-inline {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: $spacing-2;
+    width: 100%;
+
+    #{$this}__icon {
+      margin-right: $spacing-1;
+    }
   }
 
   &__icon {

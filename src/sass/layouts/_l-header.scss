@@ -16,43 +16,82 @@
     padding: 0;
   }
 
-  &__group-of-items {
-    align-items: center;
-    display: flex;
-    flex-basis: auto;
+  &__content {
     height: 100%;
+  }
+
+  &__group-of-items {
+    @extend %b-depth-4;
+    $width: 248px;
+    background-color: $color-gray-200;
+    border-top: 2px solid $color-gray-300;
+    height: calc(100vh - 64px);
+    position: absolute;
+    transform: translateX(($width * 1.2) * -1);
+    transition: transform 250ms linear;
+    width: $width;
+    z-index: 2;
 
     @include tablet-breakpoint {
+      background-color: transparent;
+      box-shadow: none;
       flex-basis: 320px;
-    }
+      flex-direction: row;
+      height: 100%;
+      position: relative;
+      transform: translateX(0);
+      width: auto;
 
-    &:first-child {
-      border-right: $border-value;
+      &:first-child {
+        border-right: $border-value;
 
-      @include tablet-breakpoint {
-        border-right: 0;
+        @include tablet-breakpoint {
+          border-right: 0;
+        }
+      }
+
+      &:last-child {
+        border-left: $border-value;
+        justify-content: flex-end;
+
+        @include tablet-breakpoint {
+          border-left: 0;
+        }
       }
     }
 
-    &:last-child {
-      border-left: $border-value;
-      justify-content: flex-end;
+    &::before {
+      $triangle-size: 10px;
+      border-bottom: $triangle-size solid $color-gray-200;
+      border-left: $triangle-size solid transparent;
+      border-right: $triangle-size solid transparent;
+      content: '';
+      height: 0;
+      left: $spacing-2;
+      position: absolute;
+      top: $triangle-size * -1;
+      width: 0;
+    }
 
-      @include tablet-breakpoint {
-        border-left: 0;
-      }
+    &.is-expanded {
+      transform: translateX(0);
     }
   }
 
   &__item {
-    @extend %u-show-hide-mobile-only;
     display: inline-block;
-    height: 100%;
+    padding: $spacing-1 0;
+    width: 100%;
 
     &:not(:first-child) {
       @include tablet-breakpoint {
         border-left: $border-value;
       }
+    }
+
+    @include tablet-breakpoint {
+      height: 100%;
+      width: auto;
     }
   }
 

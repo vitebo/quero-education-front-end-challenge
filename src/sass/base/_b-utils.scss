@@ -25,3 +25,11 @@
   @include u-min-max-height($value);
   @include u-min-max-width($value);
 }
+
+.u-hidden-scroll-mobile {
+  overflow-y: hidden;
+
+  @include tablet-breakpoint {
+    overflow-y: auto;
+  }
+}

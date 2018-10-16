@@ -1,5 +1,11 @@
 (function (win, doc) {
-  const $btnToggle = doc.querySelector('[data-js="menu-toggle"]')
-  const $menu = doc.querySelector('[data-js="menu"]')
-  $btnToggle.addEventListener('click', e => $menu.classList.toggle('is-expanded'))
+  const $btnToggleMainMenu = doc.querySelector('[data-js="main-menu-toggle"]')
+  const $btnToggleHelpMenu = doc.querySelector('[data-js="help-menu-toggle"]')
+  const $mainMenu = doc.querySelector('[data-js="main-menu"]')
+  const $helpMenu = doc.querySelector('[data-js="help-menu"]')
+  $btnToggleMainMenu.addEventListener('click', e => $mainMenu.classList.toggle('is-expanded'))
+  $btnToggleHelpMenu.addEventListener('click', e => {
+    $helpMenu.classList.toggle('is-expanded')
+    doc.body.classList.toggle('u-hidden-scroll-mobile')
+  })
 })(window, document)
