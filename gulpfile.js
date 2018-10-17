@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const connect = require('gulp-connect')
 const sass = require('gulp-sass')
+const babel = require('gulp-babel')
 const eslint = require('gulp-eslint')
 const sasslint = require('gulp-sass-lint')
 const imagemin = require('gulp-imagemin')
@@ -38,8 +39,12 @@ gulp.task('sasslint', () => {
 })
 
 gulp.task('js', () => {
-  gulp.src('./src/js/**/*.js')
+  return gulp.src('./src/js/*.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest('./dist/js'))
+    .pipe(connect.reload())
 })
 
 gulp.task('imagemin', () => {
