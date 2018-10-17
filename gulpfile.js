@@ -78,7 +78,9 @@ gulp.task('watch', () => {
 
 gulp.task('ghpages', () => gulp.src('./dist/**/*').pipe(ghPages({ force: true })))
 
-gulp.task('build', ['html', 'sasslint', 'sass', 'js', 'imagemin', 'svg', 'fonts'])
+gulp.task('lint', ['sasslint', 'eslint'])
+
+gulp.task('build', ['html', 'lint', 'sass', 'js', 'imagemin', 'svg', 'fonts'])
 
 gulp.task('dev', ['build', 'watch', 'serve'])
 

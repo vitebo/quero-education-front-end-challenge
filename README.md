@@ -20,7 +20,6 @@
     |   ├── css/
     |   |   └── main.css
     |   ├── js/
-    |   |   └── main.js
     |   ├── assets/
     |   |   ├── fonts/ 
     |   |   ├── images/ 
@@ -40,8 +39,8 @@
 
 `npm run dev`: Entra no modo de desenvolvimento com *watch* e *live reload* na porta **8080**
 
-
 `npm run build`: Faz um *build* da aplicação gerando a pasta **dist**
 
 `npm run deploy`: Faz um *deploy* da aplicação no [Github Pages](https://vitebo.github.io/quero/)
 
+`npm run lint`: Roda o lint do **js** e do **sass**
