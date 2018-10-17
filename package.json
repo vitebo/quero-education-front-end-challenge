@@ -9,7 +9,8 @@
     "gulp": "node_modules/gulp/bin/gulp.js",
     "dev": "npm run gulp dev",
     "build": "npm run gulp build",
-    "deploy": "npm run gulp deploy"
+    "deploy": "npm run gulp deploy",
+    "lint": "npm run gulp lint"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
