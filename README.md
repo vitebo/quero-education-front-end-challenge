@@ -1,5 +1,12 @@
 # Quero
 
+## Stack
+
+- Task Runner: [Gulp](https://gulpjs.com/)
+- CSS Preprocessor: [SASS](https://sass-lang.com/)
+- JS Transpiler: [Babel](https://babeljs.io/)
+
+
 ## Estrutura
 
     .
