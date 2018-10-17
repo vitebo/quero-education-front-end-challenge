@@ -148,6 +148,12 @@ a {
     padding: 0; }
   .l-header__content {
     height: 100%; }
+    @media (min-width: 792px) {
+      .l-header__content {
+        display: flex;
+        flex: 1 1 250px; } }
+    .l-header__content:last-child {
+      justify-content: flex-end; }
   .l-header__group-of-items {
     background-color: #f5f5f5;
     border-top: 2px solid #f0f0f0;
