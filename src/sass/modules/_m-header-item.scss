@@ -23,7 +23,6 @@
   &.is-inline {
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: $spacing-2;
     width: 100%;
 
     #{$this}__icon {
