@@ -1,0 +1,10 @@
+.l-task-bar {
+  background-color: $color-white;
+  position: fixed;
+  transition: transform 250ms linear;
+  z-index: 2;
+
+  &.is-hidden {
+    transform: translateY(-104px);
+  }
+}

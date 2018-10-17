@@ -7,81 +7,83 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <!--Header-->
-  <header class="l-header">
-    <div class="l-header__container">
-      <div class="l-header__content">
-        <button class="m-header-item is-toggle" data-js="help-menu-toggle">
-          <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-            <path fill-rule="evenodd" d="M18.407 17.7l-2.475-2.474c.975-1.138 1.568-2.61 1.568-4.226 0-1.615-.593-3.09-1.568-4.226L18.407 4.3C20.014 6.073 21 8.42 21 11c0 2.582-.987 4.927-2.593 6.7M11 21c-2.582 0-4.926-.986-6.7-2.592l2.474-2.475C7.91 16.907 9.384 17.5 11 17.5c1.615 0 3.09-.593 4.226-1.567l2.475 2.475C15.928 20.013 13.58 21 11 21M1 11c0-2.58.986-4.926 2.592-6.7l2.475 2.474C5.092 7.91 4.5 9.384 4.5 11c0 1.615.592 3.088 1.567 4.226L3.592 17.7C1.986 15.928 1 13.583 1 11m15.5 0c0 3.037-2.463 5.5-5.5 5.5-3.038 0-5.5-2.463-5.5-5.5 0-3.038 2.462-5.5 5.5-5.5 3.037 0 5.5 2.462 5.5 5.5M11 1c2.58 0 4.927.986 6.7 2.592l-2.474 2.475C14.088 5.092 12.616 4.5 11 4.5c-1.615 0-3.09.592-4.226 1.567L4.3 3.592C6.073 1.986 8.418 1 11 1m0-1C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0"></path>
-          </svg>
-          <span class="m-header-item__text">Ajuda</span>
-        </button>
-        <ul class="l-header__group-of-items" data-js="help-menu">
-          <li class="l-header__item">
-            <a href class="m-header-item is-inline">
-              <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                <path fill-rule="evenodd" d="M11 21C5.477 21 1 16.523 1 11S5.477 1 11 1s10 4.477 10 10-4.477 10-10 10m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0m1.094 5.496c-.388 0-.72.125-.998.377-.28.25-.418.554-.418.908 0 .355.14.656.418.905.277.25.61.373.998.373s.72-.124.996-.373c.275-.25.413-.55.413-.904 0-.353-.138-.656-.413-.907-.276-.252-.608-.377-.996-.377m.375 10.014c-.307 0-.523-.05-.647-.148-.125-.098-.187-.28-.187-.55 0-.108.02-.266.058-.476.038-.21.082-.396.13-.558l.59-2.032c.058-.187.098-.39.12-.614.02-.225.032-.38.032-.47 0-.427-.155-.775-.464-1.043-.31-.268-.75-.402-1.32-.402-.316 0-.652.054-1.008.164-.355.11-.726.24-1.115.394l-.16.63c.116-.043.255-.087.415-.134.162-.047.32-.07.473-.07.312 0 .523.052.633.154.112.103.168.284.168.545 0 .145-.02.304-.054.48-.037.173-.08.36-.134.554l-.593 2.04c-.053.213-.09.405-.115.575-.024.17-.036.335-.036.5 0 .418.16.763.478 1.035.318.273.765.408 1.34.408.373 0 .7-.047.984-.143.283-.095.66-.233 1.135-.415l.158-.63c-.08.04-.21.08-.393.13-.182.05-.345.075-.488.075"></path>
-              </svg>
-              <span class="m-header-item__text">Como funciona</span>
-            </a>
+  <div class="l-task-bar" data-js="taskbar">
+    <!--Header-->
+    <header class="l-header">
+      <div class="l-header__container">
+        <div class="l-header__content">
+          <button class="m-header-item is-toggle" data-js="help-menu-toggle">
+            <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+              <path fill-rule="evenodd" d="M18.407 17.7l-2.475-2.474c.975-1.138 1.568-2.61 1.568-4.226 0-1.615-.593-3.09-1.568-4.226L18.407 4.3C20.014 6.073 21 8.42 21 11c0 2.582-.987 4.927-2.593 6.7M11 21c-2.582 0-4.926-.986-6.7-2.592l2.474-2.475C7.91 16.907 9.384 17.5 11 17.5c1.615 0 3.09-.593 4.226-1.567l2.475 2.475C15.928 20.013 13.58 21 11 21M1 11c0-2.58.986-4.926 2.592-6.7l2.475 2.474C5.092 7.91 4.5 9.384 4.5 11c0 1.615.592 3.088 1.567 4.226L3.592 17.7C1.986 15.928 1 13.583 1 11m15.5 0c0 3.037-2.463 5.5-5.5 5.5-3.038 0-5.5-2.463-5.5-5.5 0-3.038 2.462-5.5 5.5-5.5 3.037 0 5.5 2.462 5.5 5.5M11 1c2.58 0 4.927.986 6.7 2.592l-2.474 2.475C14.088 5.092 12.616 4.5 11 4.5c-1.615 0-3.09.592-4.226 1.567L4.3 3.592C6.073 1.986 8.418 1 11 1m0-1C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0"></path>
+            </svg>
+            <span class="m-header-item__text">Ajuda</span>
+          </button>
+          <ul class="l-header__group-of-items" data-js="help-menu">
+            <li class="l-header__item">
+              <a href class="m-header-item is-inline">
+                <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                  <path fill-rule="evenodd" d="M11 21C5.477 21 1 16.523 1 11S5.477 1 11 1s10 4.477 10 10-4.477 10-10 10m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0m1.094 5.496c-.388 0-.72.125-.998.377-.28.25-.418.554-.418.908 0 .355.14.656.418.905.277.25.61.373.998.373s.72-.124.996-.373c.275-.25.413-.55.413-.904 0-.353-.138-.656-.413-.907-.276-.252-.608-.377-.996-.377m.375 10.014c-.307 0-.523-.05-.647-.148-.125-.098-.187-.28-.187-.55 0-.108.02-.266.058-.476.038-.21.082-.396.13-.558l.59-2.032c.058-.187.098-.39.12-.614.02-.225.032-.38.032-.47 0-.427-.155-.775-.464-1.043-.31-.268-.75-.402-1.32-.402-.316 0-.652.054-1.008.164-.355.11-.726.24-1.115.394l-.16.63c.116-.043.255-.087.415-.134.162-.047.32-.07.473-.07.312 0 .523.052.633.154.112.103.168.284.168.545 0 .145-.02.304-.054.48-.037.173-.08.36-.134.554l-.593 2.04c-.053.213-.09.405-.115.575-.024.17-.036.335-.036.5 0 .418.16.763.478 1.035.318.273.765.408 1.34.408.373 0 .7-.047.984-.143.283-.095.66-.233 1.135-.415l.158-.63c-.08.04-.21.08-.393.13-.182.05-.345.075-.488.075"></path>
+                </svg>
+                <span class="m-header-item__text">Como funciona</span>
+              </a>
+            </li>
+            <li class="l-header__item">
+              <a href="tel:0800-666-1010" class="m-header-item is-inline" rel="nofollow">
+                <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 36 36">
+                  <path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path>
+                </svg>
+                <span class="m-header-item__text">0800 666 1010</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="/" class="l-header__logo">
+          <img src="./assets/svgs/quero-bolsa-logo.svg" alt="Quero Bolsa logo">
+        </a>
+        <div class="l-header__content">
+          <button class="m-header-item">
+            <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+              <path fill-rule="evenodd" d="M18.29 17.83c-.596-.572-1.747-1.59-2.893-2.13-.946-.447-1.487-.9-1.655-1.382-.117-.336-.065-.72.16-1.175.17-.344.33-.63.477-.892.622-1.113 1.104-1.917 1.104-4.766 0-4.263-2.46-4.478-2.947-4.478-.4 0-.65.088-.89.173-.264.093-.538.19-1.16.2C9.36 3.4 7 3.438 7 7.36c0 2.743.714 4.003 1.275 5.015.144.26.28.505.387.748.477 1.084.13 1.84-1.098 2.383-1.55.685-2.28 1.04-3.803 2.38-1.705-1.793-2.76-4.214-2.76-6.886C1 5.477 5.477 1 11 1s10 4.477 10 10c0 2.643-1.034 5.04-2.71 6.83M11 21c-2.49 0-4.76-.915-6.511-2.42 1.346-1.18 1.99-1.502 3.478-2.16 1.723-.76 2.31-2.11 1.61-3.7-.127-.286-.273-.55-.428-.83C8.618 10.93 8 9.844 8 7.36c0-2.94 1.395-2.962 2.503-2.98.786-.013 1.17-.15 1.477-.258.206-.074.33-.117.556-.117.927 0 1.95.915 1.95 3.48-.002 2.587-.39 3.223-.98 4.277-.155.277-.324.577-.5.938-.345.7-.415 1.354-.21 1.947.267.76.957 1.38 2.173 1.957.995.47 2.04 1.39 2.6 1.922C15.813 20.062 13.52 21 11 21m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0"></path>
+            </svg>
+            <span class="m-header-item__text is-show-only-mobile">Entrar</span>
+            <span class="m-header-item__text is-hide-only-mobile">Entre ou crie a sua conta</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--Menu-->
+    <nav class="l-menu-bar">
+      <div class="l-menu-bar__container">
+        <div class="l-menu-bar__group">
+          <a href class="l-menu-bar__item is-main">Minha conta</a>
+          <button class="l-menu-bar__item" data-js="main-menu-toggle">
+            Menu
+            <svg class="l-menu-bar__arrow-bottom-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7">
+              <path fill="#FFF" fill-rule="evenodd" d="M8.228.743l1 1-4.485 4.485L.257 1.743l1-1 3.486 3.485L8.228.743z"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="m-menu" data-js="main-menu">
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Pré-matrículas</a>
           </li>
-          <li class="l-header__item">
-            <a href="tel:0800-666-1010" class="m-header-item is-inline" rel="nofollow">
-              <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 36 36">
-                <path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path>
-              </svg>
-              <span class="m-header-item__text">0800 666 1010</span>
-            </a>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Meus Cursos</a>
+          </li>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Atualizar meus dados</a>
+          </li>
+          <li class="m-menu__item">
+            <a href class="m-menu__link">Contas e Preferências</a>
+          </li>
+          <li class="m-menu__item is-active">
+            <a href class="m-menu__link">Quero Bolsa Indica</a>
           </li>
         </ul>
       </div>
-      <a href="/" class="l-header__logo">
-        <img src="./assets/svgs/quero-bolsa-logo.svg" alt="Quero Bolsa logo">
-      </a>
-      <div class="l-header__content">
-        <button class="m-header-item">
-          <svg class="m-header-item__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-            <path fill-rule="evenodd" d="M18.29 17.83c-.596-.572-1.747-1.59-2.893-2.13-.946-.447-1.487-.9-1.655-1.382-.117-.336-.065-.72.16-1.175.17-.344.33-.63.477-.892.622-1.113 1.104-1.917 1.104-4.766 0-4.263-2.46-4.478-2.947-4.478-.4 0-.65.088-.89.173-.264.093-.538.19-1.16.2C9.36 3.4 7 3.438 7 7.36c0 2.743.714 4.003 1.275 5.015.144.26.28.505.387.748.477 1.084.13 1.84-1.098 2.383-1.55.685-2.28 1.04-3.803 2.38-1.705-1.793-2.76-4.214-2.76-6.886C1 5.477 5.477 1 11 1s10 4.477 10 10c0 2.643-1.034 5.04-2.71 6.83M11 21c-2.49 0-4.76-.915-6.511-2.42 1.346-1.18 1.99-1.502 3.478-2.16 1.723-.76 2.31-2.11 1.61-3.7-.127-.286-.273-.55-.428-.83C8.618 10.93 8 9.844 8 7.36c0-2.94 1.395-2.962 2.503-2.98.786-.013 1.17-.15 1.477-.258.206-.074.33-.117.556-.117.927 0 1.95.915 1.95 3.48-.002 2.587-.39 3.223-.98 4.277-.155.277-.324.577-.5.938-.345.7-.415 1.354-.21 1.947.267.76.957 1.38 2.173 1.957.995.47 2.04 1.39 2.6 1.922C15.813 20.062 13.52 21 11 21m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0"></path>
-          </svg>
-          <span class="m-header-item__text is-show-only-mobile">Entrar</span>
-          <span class="m-header-item__text is-hide-only-mobile">Entre ou crie a sua conta</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!--Menu-->
-  <nav class="l-menu-bar">
-    <div class="l-menu-bar__container">
-      <div class="l-menu-bar__group">
-        <a href class="l-menu-bar__item is-main">Minha conta</a>
-        <button class="l-menu-bar__item" data-js="main-menu-toggle">
-          Menu
-          <svg class="l-menu-bar__arrow-bottom-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7">
-            <path fill="#FFF" fill-rule="evenodd" d="M8.228.743l1 1-4.485 4.485L.257 1.743l1-1 3.486 3.485L8.228.743z"/>
-          </svg>
-        </button>
-      </div>
-      <ul class="m-menu" data-js="main-menu">
-        <li class="m-menu__item">
-          <a href class="m-menu__link">Pré-matrículas</a>
-        </li>
-        <li class="m-menu__item">
-          <a href class="m-menu__link">Meus Cursos</a>
-        </li>
-        <li class="m-menu__item">
-          <a href class="m-menu__link">Atualizar meus dados</a>
-        </li>
-        <li class="m-menu__item">
-          <a href class="m-menu__link">Contas e Preferências</a>
-        </li>
-        <li class="m-menu__item is-active">
-          <a href class="m-menu__link">Quero Bolsa Indica</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
   <!--Main-->
   <main class="l-main">
@@ -239,237 +241,336 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <!--Footer-->
-    <footer class="l-footer">
-      <!--Contato-->
-      <section class="l-contact">
-        <div class="l-contact__container">
-          <ul class="l-contact__content">
+  <!--Footer-->
+  <footer class="l-footer">
+    <!--Contato-->
+    <section class="l-contact">
+      <div class="l-contact__container">
+        <ul class="l-contact__content">
 
-            <!--Telefone-->
-            <li class="l-contact__item m-contact is-main">
-              <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 36 36">
-                <path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path>
-              </svg>
-              <div class="m-contact__content">
-                <strong class="m-contact__title">0800 666 1010</strong>
-                <p class="m-contact__more-info">
-                  <i class="m-contact__status is-closed"></i>
-                  Seg - Sex <span class="u-hide-mobile-only">das</span> 9h as 23h
-                </p>
-              </div>
-            </li>
-
-            <!--Chat-->
-            <li class="l-contact__item m-contact">
-              <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="0 0 41 36">
-                <path fill-rule="evenodd" d="M15.212 31.5c-1.066 0-2.168-.12-3.276-.362-.128-.03-.26-.042-.388-.042-.222 0-.445.04-.654.12l-4.75 1.81.754-2.62c.2-.694-.037-1.44-.603-1.893-2.457-1.97-3.81-4.584-3.81-7.363 0-5.707 5.71-10.35 12.727-10.35 7.018 0 12.727 4.643 12.727 10.35S22.23 31.5 15.21 31.5m0-22.5C7.18 9 .667 14.44.667 21.15c0 3.447 1.725 6.55 4.485 8.76L3.394 36l8.154-3.104c1.172.255 2.395.404 3.664.404 8.033 0 14.546-5.44 14.546-12.15S23.245 9 15.212 9m25.455 3.15C40.667 5.44 34.155 0 26.12 0c-6 0-11.148 3.036-13.37 7.37.717-.093 1.447-.15 2.19-.16C17.1 3.99 21.302 1.8 26.12 1.8c7.02 0 12.728 4.643 12.728 10.35 0 2.78-1.352 5.393-3.81 7.362-.566.454-.805 1.2-.604 1.894l.756 2.62-3.76-1.432c-.072.61-.21 1.202-.372 1.786l6.88 2.62-1.757-6.09c2.762-2.21 4.487-5.314 4.487-8.76"></path>
-              </svg>
-              <div class="m-contact__content">
-                <strong class="m-contact__title is-hide-only-mobile">Chat ao vivo</strong>
-                <strong class="m-contact__title is-show-only-mobile">
-                  <i class="m-contact__status is-closed"></i>
-                  <span>Chat</span>
-                </strong>
-                <p class="m-contact__more-info">
-                  <i class="m-contact__status is-closed"></i>
-                  <span>Fale com um atendente</span>
-                </p>
-              </div>
-            </li>
-
-          </ul>
-          <ul class="l-contact__content">
-
-            <!--E-mail-->
-            <li class="l-contact__item m-contact">
-              <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="37" height="27" viewBox="0 0 37 27">
-                <path fill-rule="evenodd" d="M34.697 22.837c0 .098-.013.19-.03.284L24.566 13.05 34.668 2.98c.016.092.03.185.03.282v19.575zM33.06 24.47H3.606c-.192 0-.374-.04-.545-.1L13.26 14.202l2.81 2.8c.625.625 1.445.937 2.265.937.82 0 1.64-.312 2.266-.936l2.808-2.8 10.2 10.165c-.174.06-.355.1-.548.1zM1.97 22.836V3.262c0-.097.012-.19.028-.283L12.1 13.05 2 23.12c-.016-.092-.03-.185-.03-.283zM3.605 1.63H33.06c.193 0 .374.04.546.102l-14.164 14.12c-.297.294-.69.457-1.11.457-.418 0-.81-.164-1.108-.46L3.06 1.733c.172-.062.354-.1.546-.1zM33.06 0H3.606C1.798 0 .333 1.46.333 3.262v19.575c0 1.802 1.465 3.263 3.273 3.263H33.06c1.808 0 3.273-1.46 3.273-3.263V3.262c0-1.8-1.465-3.262-3.273-3.262z"></path>
-              </svg>
-              <div class="m-contact__content">
-                <strong class="m-contact__title is-hide-only-mobile">Mande um E-mail</strong>
-                <strong class="m-contact__title is-show-only-mobile">
-                  <i class="m-contact__status is-open"></i>
-                  <span>E-mail</span>
-                </strong>
-                <p class="m-contact__more-info">
-                  <i class="m-contact__status is-open"></i>
-                  <span>Respondemos rapidinho</span>
-                </p>
-              </div>
-            </li>
-
-            <!--Ajuda-->
-            <li class="l-contact__item m-contact">
-              <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                <path fill-rule="evenodd" d="M11 21C5.477 21 1 16.523 1 11S5.477 1 11 1s10 4.477 10 10-4.477 10-10 10m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0m1.094 5.496c-.388 0-.72.125-.998.377-.28.25-.418.554-.418.908 0 .355.14.656.418.905.277.25.61.373.998.373s.72-.124.996-.373c.275-.25.413-.55.413-.904 0-.353-.138-.656-.413-.907-.276-.252-.608-.377-.996-.377m.375 10.014c-.307 0-.523-.05-.647-.148-.125-.098-.187-.28-.187-.55 0-.108.02-.266.058-.476.038-.21.082-.396.13-.558l.59-2.032c.058-.187.098-.39.12-.614.02-.225.032-.38.032-.47 0-.427-.155-.775-.464-1.043-.31-.268-.75-.402-1.32-.402-.316 0-.652.054-1.008.164-.355.11-.726.24-1.115.394l-.16.63c.116-.043.255-.087.415-.134.162-.047.32-.07.473-.07.312 0 .523.052.633.154.112.103.168.284.168.545 0 .145-.02.304-.054.48-.037.173-.08.36-.134.554l-.593 2.04c-.053.213-.09.405-.115.575-.024.17-.036.335-.036.5 0 .418.16.763.478 1.035.318.273.765.408 1.34.408.373 0 .7-.047.984-.143.283-.095.66-.233 1.135-.415l.158-.63c-.08.04-.21.08-.393.13-.182.05-.345.075-.488.075"></path>
-              </svg>
-              <div class="m-contact__content">
-                <strong class="m-contact__title is-hide-only-mobile">Central de ajuda</strong>
-                <strong class="m-contact__title is-show-only-mobile">
-                  <i class="m-contact__status is-open"></i>
-                  Ajuda
-                </strong>
-                <p class="m-contact__more-info">
-                  <i class="m-contact__status is-open"></i>
-                  Encontre todas as respostas
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </section>
-
-      <!--Menu-->
-      <section class="l-footer-menu">
-        <div class="l-footer-menu__container">
-          <div class="l-footer-menu__content is-hide-only-mobile">
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Encontre a sua Bolsa</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Busque por faculdade</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Busque por curso</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Mapa de faculdades</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Mapa de cursos</a>
-                </li>
-              </ul>
+          <!--Telefone-->
+          <li class="l-contact__item m-contact is-main">
+            <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 36 36">
+              <path fill-rule="evenodd" d="M27.402 34.364c-1.026 0-2.025-.227-2.968-.674-.088-.04-.18-.074-.272-.098-9.3-4.745-17.004-12.45-21.75-21.75-.025-.096-.06-.19-.102-.282-.448-.945-.674-1.944-.674-2.97 0-3.967 3.474-6.954 5.726-6.954.294 0 .49.15.578.24.02.02.057.064.11.15.03.046.062.09.095.135L13.53 9.09c.042.054.087.103.136.152.09.09.24.284.24.578 0 .145-.04.282-.12.408l-1.823 1.81-.024.024c-.662.622-1.038 1.483-1.038 2.386 0 .845.328 1.65.898 2.255.02.033.042.065.064.096 2.01 2.78 4.48 5.24 7.344 7.318l.067.046c.605.58 1.415.914 2.265.914.854 0 1.678-.34 2.29-.943.03-.026.06-.054.09-.084l1.833-1.847c.128-.08.265-.122.41-.122.293 0 .488.15.577.24.048.048.1.093.152.135l6.926 5.387c.044.035.09.067.138.097.087.054.126.09.146.108.09.09.24.284.24.578 0 .056.002.11.008.166-.128 2.25-3.07 5.574-6.948 5.574zm8.575-5.74c0-.678-.275-1.292-.72-1.736-.13-.13-.277-.24-.435-.34l-6.925-5.387c-.445-.444-1.057-.72-1.735-.72-.555 0-1.06.194-1.47.505l-1.933 1.948-.006-.004c-.3.333-.73.548-1.214.548-.554 0-1.04-.276-1.337-.697-.01.017-.024.032-.035.05-2.673-1.94-5.04-4.276-6.978-6.953l.054-.04c-.426-.298-.706-.79-.706-1.35 0-.502.228-.945.58-1.247l-.002-.004 1.923-1.908c.31-.41.5-.914.5-1.47 0-.677-.274-1.29-.718-1.735L9.436 1.155C9.338 1 9.226.85 9.096.72 8.653.274 8.04 0 7.363 0 4.09 0 0 3.846 0 8.59c0 1.315.304 2.556.83 3.67l-.026.027c4.922 9.804 13.1 17.986 22.903 22.91l.027-.028c1.113.526 2.353.83 3.668.83 4.743 0 8.588-4.09 8.588-7.364v-.013h-.013zM19.64 9.817c3.615 0 6.544 2.93 6.544 6.546 0 .452.366.818.818.818.452 0 .818-.366.818-.818 0-4.518-3.662-8.182-8.18-8.182-.452 0-.817.366-.817.818 0 .452.365.818.818.818zm0-8.182c8.132 0 14.724 6.595 14.724 14.728 0 .452.366.818.818.818.452 0 .818-.366.818-.818C36 7.326 28.676 0 19.64 0c-.452 0-.817.367-.817.818 0 .453.365.818.818.818z"></path>
+            </svg>
+            <div class="m-contact__content">
+              <strong class="m-contact__title">0800 666 1010</strong>
+              <p class="m-contact__more-info">
+                <i class="m-contact__status is-closed"></i>
+                Seg - Sex <span class="u-hide-mobile-only">das</span> 9h as 23h
+              </p>
             </div>
+          </li>
 
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Central de ajuda</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Passo a passo</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Perguntas Frequentes</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Vs Educa Mais Brasil</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Vs Mais estudo/Neora</a>
-                </li>
-              </ul>
+          <!--Chat-->
+          <li class="l-contact__item m-contact">
+            <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="41" height="36" viewBox="0 0 41 36">
+              <path fill-rule="evenodd" d="M15.212 31.5c-1.066 0-2.168-.12-3.276-.362-.128-.03-.26-.042-.388-.042-.222 0-.445.04-.654.12l-4.75 1.81.754-2.62c.2-.694-.037-1.44-.603-1.893-2.457-1.97-3.81-4.584-3.81-7.363 0-5.707 5.71-10.35 12.727-10.35 7.018 0 12.727 4.643 12.727 10.35S22.23 31.5 15.21 31.5m0-22.5C7.18 9 .667 14.44.667 21.15c0 3.447 1.725 6.55 4.485 8.76L3.394 36l8.154-3.104c1.172.255 2.395.404 3.664.404 8.033 0 14.546-5.44 14.546-12.15S23.245 9 15.212 9m25.455 3.15C40.667 5.44 34.155 0 26.12 0c-6 0-11.148 3.036-13.37 7.37.717-.093 1.447-.15 2.19-.16C17.1 3.99 21.302 1.8 26.12 1.8c7.02 0 12.728 4.643 12.728 10.35 0 2.78-1.352 5.393-3.81 7.362-.566.454-.805 1.2-.604 1.894l.756 2.62-3.76-1.432c-.072.61-.21 1.202-.372 1.786l6.88 2.62-1.757-6.09c2.762-2.21 4.487-5.314 4.487-8.76"></path>
+            </svg>
+            <div class="m-contact__content">
+              <strong class="m-contact__title is-hide-only-mobile">Chat ao vivo</strong>
+              <strong class="m-contact__title is-show-only-mobile">
+                <i class="m-contact__status is-closed"></i>
+                <span>Chat</span>
+              </strong>
+              <p class="m-contact__more-info">
+                <i class="m-contact__status is-closed"></i>
+                <span>Fale com um atendente</span>
+              </p>
             </div>
+          </li>
 
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Programas dos Governo</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Notas de corte</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Tudo sobre Prouni</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Tudo sobre Sisu</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Tudo sobre Fies</a>
-                </li>
-              </ul>
-            </div>
+        </ul>
+        <ul class="l-contact__content">
 
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Revista QB</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Vestibular e Enem</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Dicas e curiosidades</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Carreiras</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Universidades</a>
-                </li>
-              </ul>
+          <!--E-mail-->
+          <li class="l-contact__item m-contact">
+            <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="37" height="27" viewBox="0 0 37 27">
+              <path fill-rule="evenodd" d="M34.697 22.837c0 .098-.013.19-.03.284L24.566 13.05 34.668 2.98c.016.092.03.185.03.282v19.575zM33.06 24.47H3.606c-.192 0-.374-.04-.545-.1L13.26 14.202l2.81 2.8c.625.625 1.445.937 2.265.937.82 0 1.64-.312 2.266-.936l2.808-2.8 10.2 10.165c-.174.06-.355.1-.548.1zM1.97 22.836V3.262c0-.097.012-.19.028-.283L12.1 13.05 2 23.12c-.016-.092-.03-.185-.03-.283zM3.605 1.63H33.06c.193 0 .374.04.546.102l-14.164 14.12c-.297.294-.69.457-1.11.457-.418 0-.81-.164-1.108-.46L3.06 1.733c.172-.062.354-.1.546-.1zM33.06 0H3.606C1.798 0 .333 1.46.333 3.262v19.575c0 1.802 1.465 3.263 3.273 3.263H33.06c1.808 0 3.273-1.46 3.273-3.263V3.262c0-1.8-1.465-3.262-3.273-3.262z"></path>
+            </svg>
+            <div class="m-contact__content">
+              <strong class="m-contact__title is-hide-only-mobile">Mande um E-mail</strong>
+              <strong class="m-contact__title is-show-only-mobile">
+                <i class="m-contact__status is-open"></i>
+                <span>E-mail</span>
+              </strong>
+              <p class="m-contact__more-info">
+                <i class="m-contact__status is-open"></i>
+                <span>Respondemos rapidinho</span>
+              </p>
             </div>
+          </li>
 
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Institucional</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Trabalhe Conosco</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Para Faculdades</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Seja um Parceiro</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Imprensa</a>
-                </li>
-              </ul>
+          <!--Ajuda-->
+          <li class="l-contact__item m-contact">
+            <svg class="m-contact__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+              <path fill-rule="evenodd" d="M11 21C5.477 21 1 16.523 1 11S5.477 1 11 1s10 4.477 10 10-4.477 10-10 10m0-21C4.925 0 0 4.925 0 11s4.925 11 11 11 11-4.925 11-11S17.075 0 11 0m1.094 5.496c-.388 0-.72.125-.998.377-.28.25-.418.554-.418.908 0 .355.14.656.418.905.277.25.61.373.998.373s.72-.124.996-.373c.275-.25.413-.55.413-.904 0-.353-.138-.656-.413-.907-.276-.252-.608-.377-.996-.377m.375 10.014c-.307 0-.523-.05-.647-.148-.125-.098-.187-.28-.187-.55 0-.108.02-.266.058-.476.038-.21.082-.396.13-.558l.59-2.032c.058-.187.098-.39.12-.614.02-.225.032-.38.032-.47 0-.427-.155-.775-.464-1.043-.31-.268-.75-.402-1.32-.402-.316 0-.652.054-1.008.164-.355.11-.726.24-1.115.394l-.16.63c.116-.043.255-.087.415-.134.162-.047.32-.07.473-.07.312 0 .523.052.633.154.112.103.168.284.168.545 0 .145-.02.304-.054.48-.037.173-.08.36-.134.554l-.593 2.04c-.053.213-.09.405-.115.575-.024.17-.036.335-.036.5 0 .418.16.763.478 1.035.318.273.765.408 1.34.408.373 0 .7-.047.984-.143.283-.095.66-.233 1.135-.415l.158-.63c-.08.04-.21.08-.393.13-.182.05-.345.075-.488.075"></path>
+            </svg>
+            <div class="m-contact__content">
+              <strong class="m-contact__title is-hide-only-mobile">Central de ajuda</strong>
+              <strong class="m-contact__title is-show-only-mobile">
+                <i class="m-contact__status is-open"></i>
+                Ajuda
+              </strong>
+              <p class="m-contact__more-info">
+                <i class="m-contact__status is-open"></i>
+                Encontre todas as respostas
+              </p>
             </div>
+          </li>
 
-            <div class="l-footer-menu__group">
-              <h6 class="l-footer-menu__title">Dicas Quero Bolsa</h6>
-              <ul>
-                <li>
-                  <a href class="l-footer-menu__link">Bolsas Ensino Básico</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Serviços Parceiros</a>
-                </li>
-                <li>
-                  <a href class="l-footer-menu__link">Quero Bolsa 100%</a>
-                </li>
-              </ul>
-            </div>
+        </ul>
+      </div>
+    </section>
+
+    <!--Menu-->
+    <section class="l-footer-menu">
+      <div class="l-footer-menu__container">
+        <div class="l-footer-menu__content is-hide-only-mobile">
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Encontre a sua Bolsa</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Busque por faculdade</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Busque por curso</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Mapa de faculdades</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Mapa de cursos</a>
+              </li>
+            </ul>
           </div>
-          <div class="l-footer-menu__content is-show-only-mobile">
-            <div class="l-footer-menu__group">
-              <ul class="l-footer-menu__list">
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Central de Ajuda</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">VS Educa Mais Brasil</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">VS Mais Estudo</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Mapa de Faculdades</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Mapa de Cursos</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Revista QB</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Guia de Programas do Governo</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Trabalhe conosco</a>
-                </li>
-                <li class="l-footer-menu__item">
-                  <a href class="l-footer-menu__link">Imprensa</a>
-                </li>
-              </ul>
-            </div>
+
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Central de ajuda</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Passo a passo</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Perguntas Frequentes</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Vs Educa Mais Brasil</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Vs Mais estudo/Neora</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Programas dos Governo</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Notas de corte</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Tudo sobre Prouni</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Tudo sobre Sisu</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Tudo sobre Fies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Revista QB</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Vestibular e Enem</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Dicas e curiosidades</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Carreiras</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Universidades</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Institucional</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Trabalhe Conosco</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Para Faculdades</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Seja um Parceiro</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Imprensa</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-footer-menu__group">
+            <h6 class="l-footer-menu__title">Dicas Quero Bolsa</h6>
+            <ul>
+              <li>
+                <a href class="l-footer-menu__link">Bolsas Ensino Básico</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Serviços Parceiros</a>
+              </li>
+              <li>
+                <a href class="l-footer-menu__link">Quero Bolsa 100%</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="l-footer-menu__content is-show-only-mobile">
+          <div class="l-footer-menu__group">
+            <ul class="l-footer-menu__list">
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Central de Ajuda</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">VS Educa Mais Brasil</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">VS Mais Estudo</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Mapa de Faculdades</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Mapa de Cursos</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Revista QB</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Guia de Programas do Governo</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Trabalhe conosco</a>
+              </li>
+              <li class="l-footer-menu__item">
+                <a href class="l-footer-menu__link">Imprensa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!--Formas de pagamento-->
-      <section class="l-footer__payment">
-        <ul class="m-payment u-show-mobile-only">
+    <!--Formas de pagamento-->
+    <section class="l-footer__payment">
+      <ul class="m-payment u-show-mobile-only">
+        <li class=" m-payment__item">
+          <img src="assets/images/safesite.png" alt="Site seguro">
+        </li>
+        <li class=" m-payment__item">
+          <img src="assets/svgs/visa.svg" alt="Visa">
+        </li>
+        <li class=" m-payment__item">
+          <img src="assets/svgs/mastercard.svg" alt="MasterCard">
+        </li>
+        <li class=" m-payment__item">
+          <img src="assets/svgs/americanexpress.svg" alt="American Express">
+        </li>
+        <li class=" m-payment__item">
+          <img src="assets/svgs/elo.svg" alt="Elo">
+        </li>
+        <li class=" m-payment__item">
+          <img src="assets/svgs/boleto.svg" alt="Boleto">
+        </li>
+      </ul>
+    </section>
+
+    <!--Midia-->
+    <section class="l-midia">
+      <div class="l-midia__container">
+        <div class="l-midia__group">
+          <h6 class="l-midia__title">Somos destaque na imprensa</h6>
+          <ul class="l-midia__content">
+            <li class="l-midia__item">
+              <a href class="l-midia__link">
+                <img src="assets/images/globo.png" class="l-midia__image is-small" alt="Globo">
+              </a>
+            </li>
+            <li class="l-midia__item">
+              <a href class="l-midia__link">
+                <img src="assets/images/folha.png" class="l-midia__image is-small" alt="Folha">
+              </a>
+            </li>
+            <li class="l-midia__item">
+              <a href class="l-midia__link">
+                <img src="assets/images/veja.png" class="l-midia__image is-small" alt="Veja">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="l-midia__group is-main">
+          <h6 class="l-midia__title">Conecte-se as nossas redes sociais</h6>
+          <ul class="l-midia__content">
+            <li class="l-midia__item">
+              <a class="l-midia__link" href>
+                <img src="assets/images/youtube.png" class="l-midia__image is-small" alt="YouTube">
+              </a>
+            </li>
+            <li class="l-midia__item">
+              <a class="l-midia__link" href>
+                <img src="assets/images/instagram.png" class="l-midia__image is-small" alt="Instagram">
+              </a>
+            </li>
+            <li class="l-midia__item">
+              <a class="l-midia__link" href>
+                <img src="assets/svgs/twitter.svg" class="l-midia__image is-small" alt="Twitter">
+              </a>
+            </li>
+            <li class="l-midia__item">
+              <a class="l-midia__link" href>
+                <img src="assets/images/facebook-white-circle.png" class="l-midia__image is-small" alt="Facebook">
+                <span class="l-midia__more-info">500k likes</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="l-midia__group">
+          <h6 class="l-midia__title">Atendimento de excelência</h6>
+          <div class="l-midia__content is-alone">
+            <img src="assets/images/selo-premio-reclameaqui.png" class="l-midia__image" alt="Selo prêmio Reclame Aqui">
+          </div>
+        </div>
+
+        <div class="l-midia__group">
+          <h6 class="l-midia__title">Política de Bolsa Garantida</h6>
+          <div class="l-midia__content">
+            <img src="assets/images/selo-politica.png" class="l-midia__image is-bigger" alt="Selo Política">
+            <p class="l-midia__more-info">Você na faculdade ou seu dinheiro de volta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Bottom-bar-->
+    <section class="l-bottom-bar">
+      <div class="l-bottom-bar__container">
+        <div class="l-bottom-bar__content">
+          <p class="l-bottom-bar__text">Rede Alumni © 2011 - 2016</p>
+          <p class="l-bottom-bar__text">CNPJ: 10.54.212/0001-54</p>
+        </div>
+
+        <ul class="m-payment u-hide-mobile-only">
           <li class=" m-payment__item">
             <img src="assets/images/safesite.png" alt="Site seguro">
           </li>
@@ -483,126 +584,27 @@
             <img src="assets/svgs/americanexpress.svg" alt="American Express">
           </li>
           <li class=" m-payment__item">
+            <img src="assets/svgs/dinersclub.svg" alt="Diners Club">
+          </li>
+          <li class=" m-payment__item">
             <img src="assets/svgs/elo.svg" alt="Elo">
+          </li>
+          <li class=" m-payment__item">
+            <img src="assets/svgs/hipercard.svg" alt="Hipercard">
           </li>
           <li class=" m-payment__item">
             <img src="assets/svgs/boleto.svg" alt="Boleto">
           </li>
         </ul>
-      </section>
 
-      <!--Midia-->
-      <section class="l-midia">
-        <div class="l-midia__container">
-          <div class="l-midia__group">
-            <h6 class="l-midia__title">Somos destaque na imprensa</h6>
-            <ul class="l-midia__content">
-              <li class="l-midia__item">
-                <a href class="l-midia__link">
-                  <img src="assets/images/globo.png" class="l-midia__image is-small" alt="Globo">
-                </a>
-              </li>
-              <li class="l-midia__item">
-                <a href class="l-midia__link">
-                  <img src="assets/images/folha.png" class="l-midia__image is-small" alt="Folha">
-                </a>
-              </li>
-              <li class="l-midia__item">
-                <a href class="l-midia__link">
-                  <img src="assets/images/veja.png" class="l-midia__image is-small" alt="Veja">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="l-midia__group is-main">
-            <h6 class="l-midia__title">Conecte-se as nossas redes sociais</h6>
-            <ul class="l-midia__content">
-              <li class="l-midia__item">
-                <a class="l-midia__link" href>
-                  <img src="assets/images/youtube.png" class="l-midia__image is-small" alt="YouTube">
-                </a>
-              </li>
-              <li class="l-midia__item">
-                <a class="l-midia__link" href>
-                  <img src="assets/images/instagram.png" class="l-midia__image is-small" alt="Instagram">
-                </a>
-              </li>
-              <li class="l-midia__item">
-                <a class="l-midia__link" href>
-                  <img src="assets/svgs/twitter.svg" class="l-midia__image is-small" alt="Twitter">
-                </a>
-              </li>
-              <li class="l-midia__item">
-                <a class="l-midia__link" href>
-                  <img src="assets/images/facebook-white-circle.png" class="l-midia__image is-small" alt="Facebook">
-                  <span class="l-midia__more-info">500k likes</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="l-midia__group">
-            <h6 class="l-midia__title">Atendimento de excelência</h6>
-            <div class="l-midia__content is-alone">
-              <img src="assets/images/selo-premio-reclameaqui.png" class="l-midia__image" alt="Selo prêmio Reclame Aqui">
-            </div>
-          </div>
-
-          <div class="l-midia__group">
-            <h6 class="l-midia__title">Política de Bolsa Garantida</h6>
-            <div class="l-midia__content">
-              <img src="assets/images/selo-politica.png" class="l-midia__image is-bigger" alt="Selo Política">
-              <p class="l-midia__more-info">Você na faculdade ou seu dinheiro de volta</p>
-            </div>
-          </div>
+        <div class="l-bottom-bar__content is-love">
+          <p class="l-bottom-bar__text">
+            Feito com amor <span class="l-bottom-bar__heart">❥</span> pela Quero Educação
+          </p>
         </div>
-      </section>
-
-      <!--Bottom-bar-->
-      <section class="l-bottom-bar">
-        <div class="l-bottom-bar__container">
-          <div class="l-bottom-bar__content">
-            <p class="l-bottom-bar__text">Rede Alumni © 2011 - 2016</p>
-            <p class="l-bottom-bar__text">CNPJ: 10.54.212/0001-54</p>
-          </div>
-
-          <ul class="m-payment u-hide-mobile-only">
-            <li class=" m-payment__item">
-              <img src="assets/images/safesite.png" alt="Site seguro">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/visa.svg" alt="Visa">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/mastercard.svg" alt="MasterCard">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/americanexpress.svg" alt="American Express">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/dinersclub.svg" alt="Diners Club">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/elo.svg" alt="Elo">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/hipercard.svg" alt="Hipercard">
-            </li>
-            <li class=" m-payment__item">
-              <img src="assets/svgs/boleto.svg" alt="Boleto">
-            </li>
-          </ul>
-
-          <div class="l-bottom-bar__content is-love">
-            <p class="l-bottom-bar__text">
-              Feito com amor <span class="l-bottom-bar__heart">❥</span> pela Quero Educação
-            </p>
-          </div>
-        </div>
-      </section>
-    </footer>
-  </main>
+      </div>
+    </section>
+  </footer>
 
   <script src="js/menu.js"></script>
 </body>

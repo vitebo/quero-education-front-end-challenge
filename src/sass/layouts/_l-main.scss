@@ -1,4 +1,6 @@
 .l-main {
+  padding-top: 110px;
+
   &__header {
     @extend %u-container;
     padding-bottom: $spacing-2;
