@@ -3,11 +3,13 @@
 ## Estrutura
 
     .
-    ├── README.md
     ├── src/
     |   ├── index.html
     |   ├── assets/
-    |   |   └── images/
+    |   |   ├── fonts/
+    |   |   ├── images/
+    |   |   └── svgs/
+    |   ├── js/
     |   ├── sass/
     |   |   ├── base/
     |   |   ├── layout/
@@ -17,10 +19,19 @@
     ├── dist/
     |   ├── css/
     |   |   └── main.css
-    |   └── images/
+    |   ├── js/
+    |   |   └── main.js
+    |   ├── assets/
+    |   |   ├── fonts/ 
+    |   |   ├── images/ 
+    |   |   └── svgs/ 
+    |   └── index.html
+    ├── README.md
     ├── package.json
+    ├── package-lock.json
     ├── gulpfile.js
     ├── .eslintrc.yml
+    ├── .sasslint.yml
     ├── .editorconfig
     └── .gitignore
 
