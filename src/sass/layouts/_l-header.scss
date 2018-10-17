@@ -18,6 +18,15 @@
 
   &__content {
     height: 100%;
+
+    @include tablet-breakpoint {
+      display: flex;
+      flex: 1 1 250px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
   }
 
   &__group-of-items {
