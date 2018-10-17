@@ -2,9 +2,18 @@
   background-color: $color-white;
   position: fixed;
   transition: transform 250ms linear;
+  width: 100%;
   z-index: 2;
+
+  @include tablet-breakpoint {
+    position: relative;
+  }
 
   &.is-hidden {
     transform: translateY(-104px);
+
+    @include tablet-breakpoint {
+      transform: translateY(0);
+    }
   }
 }
