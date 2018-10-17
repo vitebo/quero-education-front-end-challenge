@@ -13,15 +13,19 @@
 
 ```sh
 $ git clone https://github.com/vitebo/quero.git
-$ cd quero
-$ npm install
 ```
 
-**2.** Instale as dependências:
+**2.** Acesse o projeto:
+
+```sh
+$ cd quero
+```
+
+**3.** Instale as dependências:
 
 ```$ npm install``` ou ```$ yarn install```
 
-**3.** Rode o projeto:
+**4.** Rode o projeto:
 
 ```$ npm run dev``` ou ```$ yarn dev```
 
