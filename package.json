@@ -7,8 +7,9 @@
   "license": "MIT",
   "scripts": {
     "gulp": "node_modules/gulp/bin/gulp.js",
-    "dev": "yarn gulp dev",
-    "build": "yarn gulp build"
+    "dev": "npm run gulp dev",
+    "build": "npm run gulp build",
+    "deploy": "npm run deploy build"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
