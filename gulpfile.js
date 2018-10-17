@@ -4,6 +4,7 @@ const sass = require('gulp-sass')
 const eslint = require('gulp-eslint')
 const sasslint = require('gulp-sass-lint')
 const imagemin = require('gulp-imagemin')
+const ghPages = require('gulp-gh-pages')
 
 gulp.task('sass', () => {
   gulp.src('./src/sass/**/*.scss')
@@ -70,6 +71,10 @@ gulp.task('watch', () => {
   gulp.watch('./src/js/**/*.js', ['js'])
 })
 
+gulp.task('ghpages', () => gulp.src('./dist/**/*').pipe(ghPages({ force: true })))
+
 gulp.task('build', ['html', 'sasslint', 'sass', 'js', 'imagemin', 'svg', 'fonts'])
 
 gulp.task('dev', ['build', 'watch', 'serve'])
+
+gulp.task('deploy', ['build', 'ghpages'])
