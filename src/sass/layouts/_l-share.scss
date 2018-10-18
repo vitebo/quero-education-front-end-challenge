@@ -4,6 +4,10 @@
   padding-bottom: $spacing-4;
   padding-top: $spacing-4;
 
+  @include tablet-breakpoint {
+    padding-bottom: $spacing-8;
+  }
+
   &__title {
     margin-bottom:  $spacing-2;
 
