@@ -332,10 +332,11 @@ a {
     display: block;
     margin-bottom: 16px; }
   .l-card__button {
-    background-color: #10c979;
+    background: #10c979;
     border: 0;
     border-radius: 5px;
     color: #ffffff;
+    cursor: pointer;
     display: block;
     font-size: 1.1em;
     font-weight: 800;
@@ -343,6 +344,8 @@ a {
     margin-top: 8px;
     padding: 0 32px;
     width: 100%; }
+    .l-card__button:hover {
+      background: linear-gradient(to bottom, #10c979, #11d27f); }
   .l-card__link {
     color: #de9e1f;
     display: block;
@@ -572,9 +575,16 @@ a {
         font-size: .9em;
         text-align: left; } }
   .l-bottom-bar__heart {
+    animation: heart-animation 800ms infinite;
     display: inline-block;
     margin-right: 4px;
     transform: rotate(90deg) scale(1.2); }
+
+@keyframes heart-animation {
+  from {
+    transform: rotate(90deg) scale(1.2); }
+  to {
+    transform: rotate(90deg) scale(1.4); } }
 
 .m-header-item {
   align-items: center;
