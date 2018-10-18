@@ -358,6 +358,9 @@ a {
 .l-share {
   padding-bottom: 32px;
   padding-top: 32px; }
+  @media (min-width: 792px) {
+    .l-share {
+      padding-bottom: 64px; } }
   .l-share__title {
     margin-bottom: 16px; }
     @media (min-width: 792px) {
