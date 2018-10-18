@@ -49,8 +49,19 @@
   }
 
   &__heart {
+    animation: heart-animation 800ms infinite;
     display: inline-block;
     margin-right: 4px;
     transform: rotate(90deg) scale(1.2);
+
+    @keyframes heart-animation {
+      from {
+        transform: rotate(90deg) scale(1.2);
+      }
+
+      to {
+        transform: rotate(90deg) scale(1.4);
+      }
+    }
   }
 }
