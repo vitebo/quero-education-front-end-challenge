@@ -1,5 +1,8 @@
 # Quero
 
+Desafio de *front-end* da **Quero Educação**
+
+
 ## Stack
 
 - Task Runner: [Gulp](https://gulpjs.com/)
