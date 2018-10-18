@@ -32,12 +32,12 @@
     margin-bottom: $spacing-2;
   }
 
-  // TODO: Faz sentido esse botão ficar preso no escopo desse card?
   &__button {
-    background-color: $color-highlight;
+    background: $color-highlight;
     border: 0;
     border-radius: 5px;
     color: $color-white;
+    cursor: pointer;
     display: block;
     font-size: 1.1em;
     font-weight: $font-weight-proxima-nova-bold;
@@ -45,6 +45,10 @@
     margin-top: $spacing-1;
     padding: 0 $spacing-4;
     width: 100%;
+
+    &:hover {
+      background: linear-gradient(to bottom, $color-highlight, lighten($color-highlight, 2%));
+    }
   }
 
   &__link {
