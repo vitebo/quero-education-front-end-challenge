@@ -6,7 +6,7 @@
   "author": "vitebo <vitebo51@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "gulp": "node_modules/gulp/bin/gulp.js",
+    "gulp": "node node_modules/gulp/bin/gulp.js",
     "dev": "npm run gulp dev",
     "build": "npm run gulp build",
     "deploy": "npm run gulp deploy",
