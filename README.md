@@ -2,7 +2,7 @@
 
 Desafio de *front-end* da **Quero Educação**
 
-site disponivel [https://vitebo.github.io/quero_education_front-end_challenge/](https://vitebo.github.io/quero/)
+site disponivel em [quero education front-end challenge](https://vitebo.github.io/quero_education_front-end_challenge/)
 
 ## Stack
 
